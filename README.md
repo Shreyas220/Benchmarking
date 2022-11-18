@@ -31,6 +31,6 @@ redis-server
 
 now do 
 ```
-go run main.go
+go run *.go
 ```
 
