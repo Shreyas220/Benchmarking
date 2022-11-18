@@ -4,7 +4,7 @@ automating benchmarking Kubearmor and redis
 
 ## Steps to follow 
 ```
-helm install release bitnam/redis
+helm install release bitnami/redis
 ```
 
 
