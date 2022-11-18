@@ -8,32 +8,42 @@ import (
 	"time"
 )
 
-func redis_test() {
+func Redis_benchmark() {
 
+	fmt.Println("Starting")
 	n := 100000
 	for i := 0; i < 3; i++ {
 		n = n * 10
+		fmt.Println("======WithoutKubearmor ", n, " =====")
 		runCommandWithoutKubearmor(n)
 	}
+
+	fmt.Println("Sleeping for 1 minute")
+	time.Sleep(10 * time.Second)
+	fmt.Println("installing kubearmor now ")
 	out, err := exec.Command("karmor", "install").Output()
 	if err != nil {
 		log.Fatal(err)
 	}
 	output := string(out)
-	fmt.Println("installing kubearmor", output)
+	fmt.Println("installed kubearmor  ", output)
 
+	fmt.Println("Sleeping for 1 minute")
+	time.Sleep(15 * time.Second)
 	n2 := 100000
 	for i := 0; i < 3; i++ {
 		n2 = n2 * 10
-		runCommandWithKubearmor(n)
+		fmt.Println("======WithKubearmor ", n2, " =====")
+		runCommandWithKubearmor(n2)
 	}
+	fmt.Println()
 	out, err = exec.Command("kubectl", "create", "ns", "explorer").Output()
 	if err != nil {
 		log.Fatal(err)
 	}
 	output = string(out)
 	fmt.Println(output)
-
+	fmt.Println("applying discovery engine")
 	out, err = exec.Command("kubectl", "apply", "-f", "https://raw.githubusercontent.com/kubearmor/discovery-engine/dev/deployments/k8s/deployment.yaml", "-n", "explorer").Output()
 	if err != nil {
 		log.Fatal(err)
@@ -42,13 +52,6 @@ func redis_test() {
 	fmt.Println(output)
 
 	fmt.Println("apply discovery engine", output)
-	out, err = exec.Command("karmor", "discover", "--gRPC", ":9089", "|", "-a", "policy.yaml").Output()
-	if err != nil {
-		log.Fatal(err)
-	}
-	output = string(out)
-	fmt.Println(output)
-
 	out, err = exec.Command("kubectl", "apply", "-f", "policy.yaml").Output()
 	if err != nil {
 		log.Fatal(err)
@@ -59,8 +62,18 @@ func redis_test() {
 	n3 := 100000
 
 	for i := 0; i < 3; i++ {
+		fmt.Println("======WithPolicy ", n3, " =====")
 		n3 = n3 * 10
-		runCommandWithPolicy(n)
+		runCommandWithPolicy(n3)
+	}
+
+}
+
+func runParallel() {
+
+	_, err := exec.Command("karmor", "discover", "--gRPC", ":9089", "|", "-a", "policy.yaml").Output()
+	if err != nil {
+		log.Fatal(err)
 	}
 
 }
@@ -72,6 +85,7 @@ func runCommandWithoutKubearmor(n int) {
 		if err != nil {
 			log.Fatal(err)
 		}
+
 		output := string(out)
 		str := "test/withoutKubearmor" + fmt.Sprint(i) + "_" + fmt.Sprint(n) + ".txt"
 		f, err := os.Create(str)

@@ -1,0 +1,771 @@
+{
+    "apiVersion": "security.kubearmor.com/v1",
+    "kind": "KubeArmorPolicy",
+    "metadata": {
+        "name": "autopol-system-1579045790",
+        "namespace": "default"
+    },
+    "spec": {
+        "severity": 1,
+        "selector": {
+            "matchLabels": {
+                "app.kubernetes.io/component": "replica",
+                "app.kubernetes.io/instance": "release",
+                "app.kubernetes.io/managed-by": "Helm",
+                "app.kubernetes.io/name": "redis",
+                "helm.sh/chart": "redis-17.3.9"
+            }
+        },
+        "process": {
+            "matchPaths": [
+                {
+                    "path": "/bin/sh",
+                    "fromSource": [
+                        {
+                            "path": "/bin/dash"
+                        }
+                    ]
+                },
+                {
+                    "path": "/health/ping_liveness_local.sh",
+                    "fromSource": [
+                        {
+                            "path": "/health/..2022_11_17_15_20_14.4031501462/ping_liveness_local_and_master.sh"
+                        },
+                        {
+                            "path": "/health/ping_liveness_local_and_master.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/health/ping_liveness_master.sh",
+                    "fromSource": [
+                        {
+                            "path": "/health/ping_liveness_local_and_master.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/health/ping_readiness_local.sh",
+                    "fromSource": [
+                        {
+                            "path": "/health/ping_readiness_local_and_master.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/health/ping_readiness_master.sh",
+                    "fromSource": [
+                        {
+                            "path": "/health/ping_readiness_local_and_master.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/opt/bitnami/common/bin/redis-cli",
+                    "fromSource": [
+                        {
+                            "path": "/usr/bin/timeout"
+                        }
+                    ]
+                },
+                {
+                    "path": "/opt/bitnami/redis/bin/redis-cli",
+                    "fromSource": [
+                        {
+                            "path": "/usr/bin/timeout"
+                        }
+                    ]
+                },
+                {
+                    "path": "/usr/bin/awk",
+                    "fromSource": [
+                        {
+                            "path": "/bin/bash"
+                        }
+                    ]
+                },
+                {
+                    "path": "/usr/bin/dirname",
+                    "fromSource": [
+                        {
+                            "path": "/bin/dash"
+                        },
+                        {
+                            "path": "/bin/sh"
+                        },
+                        {
+                            "path": "/health/..2022_11_17_15_20_14.4031501462/ping_liveness_local_and_master.sh"
+                        },
+                        {
+                            "path": "/health/..2022_11_17_15_20_47.3324209592/ping_liveness_local_and_master.sh"
+                        },
+                        {
+                            "path": "/health/ping_liveness_local_and_master.sh"
+                        },
+                        {
+                            "path": "/health/ping_readiness_local_and_master.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/usr/bin/head",
+                    "fromSource": [
+                        {
+                            "path": "/bin/bash"
+                        }
+                    ]
+                },
+                {
+                    "path": "/usr/bin/timeout",
+                    "fromSource": [
+                        {
+                            "path": "/bin/bash"
+                        },
+                        {
+                            "path": "/health/..2022_11_17_15_20_47.3324209592/ping_readiness_master.sh"
+                        },
+                        {
+                            "path": "/health/ping_liveness_local.sh"
+                        },
+                        {
+                            "path": "/health/ping_liveness_master.sh"
+                        },
+                        {
+                            "path": "/health/ping_readiness_local.sh"
+                        },
+                        {
+                            "path": "/health/ping_readiness_master.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/health/ping_liveness_local_and_master.sh"
+                },
+                {
+                    "path": "/health/ping_readiness_local_and_master.sh"
+                },
+                {
+                    "path": "/bin/dash"
+                }
+            ],
+            "matchDirectories": [
+                {
+                    "dir": "/health/",
+                    "recursive": true,
+                    "fromSource": [
+                        {
+                            "path": "/bin/dash"
+                        },
+                        {
+                            "path": "/bin/sh"
+                        }
+                    ]
+                }
+            ]
+        },
+        "file": {
+            "matchPaths": [
+                {
+                    "path": "/etc/group",
+                    "fromSource": [
+                        {
+                            "path": "/bin/sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/etc/ld.so.cache",
+                    "fromSource": [
+                        {
+                            "path": "/bin/sh"
+                        },
+                        {
+                            "path": "/health/ping_liveness_local.sh"
+                        },
+                        {
+                            "path": "/health/ping_liveness_local_and_master.sh"
+                        },
+                        {
+                            "path": "/health/ping_liveness_master.sh"
+                        },
+                        {
+                            "path": "/health/ping_readiness_local.sh"
+                        },
+                        {
+                            "path": "/health/ping_readiness_local_and_master.sh"
+                        },
+                        {
+                            "path": "/health/ping_readiness_master.sh"
+                        },
+                        {
+                            "path": "/usr/bin/awk"
+                        },
+                        {
+                            "path": "/usr/bin/dirname"
+                        },
+                        {
+                            "path": "/usr/bin/head"
+                        },
+                        {
+                            "path": "/usr/bin/timeout"
+                        }
+                    ]
+                },
+                {
+                    "path": "/etc/nsswitch.conf",
+                    "fromSource": [
+                        {
+                            "path": "/health/ping_liveness_local.sh"
+                        },
+                        {
+                            "path": "/health/ping_liveness_master.sh"
+                        },
+                        {
+                            "path": "/health/ping_readiness_local.sh"
+                        },
+                        {
+                            "path": "/health/ping_readiness_master.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/etc/passwd",
+                    "fromSource": [
+                        {
+                            "path": "/bin/sh"
+                        },
+                        {
+                            "path": "/health/ping_liveness_local.sh"
+                        },
+                        {
+                            "path": "/health/ping_liveness_master.sh"
+                        },
+                        {
+                            "path": "/health/ping_readiness_local.sh"
+                        },
+                        {
+                            "path": "/health/ping_readiness_master.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/health/..2022_11_17_15_19_34.3716610508/ping_liveness_local.sh",
+                    "fromSource": [
+                        {
+                            "path": "/health/ping_liveness_local.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/health/..2022_11_17_15_19_34.3716610508/ping_liveness_local_and_master.sh",
+                    "fromSource": [
+                        {
+                            "path": "/bin/sh"
+                        },
+                        {
+                            "path": "/health/ping_liveness_local_and_master.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/health/..2022_11_17_15_19_34.3716610508/ping_liveness_master.sh",
+                    "fromSource": [
+                        {
+                            "path": "/health/ping_liveness_master.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/health/..2022_11_17_15_19_34.3716610508/ping_readiness_local.sh",
+                    "fromSource": [
+                        {
+                            "path": "/health/ping_readiness_local.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/health/..2022_11_17_15_19_34.3716610508/ping_readiness_local_and_master.sh",
+                    "fromSource": [
+                        {
+                            "path": "/bin/sh"
+                        },
+                        {
+                            "path": "/health/ping_readiness_local_and_master.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/health/..2022_11_17_15_19_34.3716610508/ping_readiness_master.sh",
+                    "fromSource": [
+                        {
+                            "path": "/health/ping_readiness_master.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/health/..2022_11_17_15_20_14.4031501462/ping_liveness_local.sh",
+                    "fromSource": [
+                        {
+                            "path": "/health/ping_liveness_local.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/health/..2022_11_17_15_20_14.4031501462/ping_liveness_local_and_master.sh",
+                    "fromSource": [
+                        {
+                            "path": "/bin/sh"
+                        },
+                        {
+                            "path": "/health/ping_liveness_local_and_master.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/health/..2022_11_17_15_20_14.4031501462/ping_liveness_master.sh",
+                    "fromSource": [
+                        {
+                            "path": "/health/ping_liveness_master.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/health/..2022_11_17_15_20_14.4031501462/ping_readiness_local.sh",
+                    "fromSource": [
+                        {
+                            "path": "/health/ping_readiness_local.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/health/..2022_11_17_15_20_14.4031501462/ping_readiness_local_and_master.sh",
+                    "fromSource": [
+                        {
+                            "path": "/bin/dash"
+                        },
+                        {
+                            "path": "/bin/sh"
+                        },
+                        {
+                            "path": "/health/ping_readiness_local_and_master.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/health/..2022_11_17_15_20_14.4031501462/ping_readiness_master.sh",
+                    "fromSource": [
+                        {
+                            "path": "/health/ping_readiness_master.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/health/..2022_11_17_15_20_47.3324209592/ping_liveness_local.sh",
+                    "fromSource": [
+                        {
+                            "path": "/health/ping_liveness_local.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/health/..2022_11_17_15_20_47.3324209592/ping_liveness_local_and_master.sh",
+                    "fromSource": [
+                        {
+                            "path": "/bin/sh"
+                        },
+                        {
+                            "path": "/health/ping_liveness_local_and_master.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/health/..2022_11_17_15_20_47.3324209592/ping_liveness_master.sh",
+                    "fromSource": [
+                        {
+                            "path": "/health/ping_liveness_master.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/health/..2022_11_17_15_20_47.3324209592/ping_readiness_local.sh",
+                    "fromSource": [
+                        {
+                            "path": "/health/ping_readiness_local.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/health/..2022_11_17_15_20_47.3324209592/ping_readiness_local_and_master.sh",
+                    "fromSource": [
+                        {
+                            "path": "/bin/sh"
+                        },
+                        {
+                            "path": "/health/ping_readiness_local_and_master.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/health/..2022_11_17_15_20_47.3324209592/ping_readiness_master.sh",
+                    "fromSource": [
+                        {
+                            "path": "/health/ping_readiness_master.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/usr/lib/x86_64-linux-gnu/libcrypto.so.1.1",
+                    "fromSource": [
+                        {
+                            "path": "/opt/bitnami/redis/bin/redis-cli"
+                        }
+                    ]
+                },
+                {
+                    "path": "/usr/lib/x86_64-linux-gnu/libssl.so.1.1",
+                    "fromSource": [
+                        {
+                            "path": "/opt/bitnami/redis/bin/redis-cli"
+                        }
+                    ]
+                }
+            ],
+            "matchDirectories": [
+                {
+                    "dir": "/",
+                    "recursive": true,
+                    "fromSource": [
+                        {
+                            "path": "/bin/sh"
+                        }
+                    ]
+                },
+                {
+                    "dir": "/etc/",
+                    "recursive": true,
+                    "fromSource": [
+                        {
+                            "path": "/opt/bitnami/redis/bin/redis-cli"
+                        }
+                    ]
+                },
+                {
+                    "dir": "/sys/",
+                    "recursive": true,
+                    "fromSource": [
+                        {
+                            "path": "/opt/bitnami/redis/bin/redis-cli"
+                        }
+                    ]
+                },
+                {
+                    "dir": "/lib/x86_64-linux-gnu/",
+                    "recursive": true
+                }
+            ]
+        },
+        "network": {
+            "matchProtocols": [
+                {
+                    "protocol": "raw",
+                    "fromSource": [
+                        {
+                            "path": "/opt/bitnami/redis/bin/redis-cli"
+                        }
+                    ]
+                },
+                {
+                    "protocol": "tcp",
+                    "fromSource": [
+                        {
+                            "path": "/health/ping_liveness_local.sh"
+                        },
+                        {
+                            "path": "/health/ping_liveness_master.sh"
+                        },
+                        {
+                            "path": "/health/ping_readiness_local.sh"
+                        },
+                        {
+                            "path": "/health/ping_readiness_master.sh"
+                        },
+                        {
+                            "path": "/opt/bitnami/redis/bin/redis-cli"
+                        }
+                    ]
+                },
+                {
+                    "protocol": "udp",
+                    "fromSource": [
+                        {
+                            "path": "/opt/bitnami/redis/bin/redis-cli"
+                        }
+                    ]
+                }
+            ]
+        },
+        "action": "Allow"
+    }
+}
+{
+    "apiVersion": "security.kubearmor.com/v1",
+    "kind": "KubeArmorPolicy",
+    "metadata": {
+        "name": "autopol-system-2296577574",
+        "namespace": "default"
+    },
+    "spec": {
+        "severity": 1,
+        "selector": {
+            "matchLabels": {
+                "app.kubernetes.io/component": "master",
+                "app.kubernetes.io/instance": "release",
+                "app.kubernetes.io/managed-by": "Helm",
+                "app.kubernetes.io/name": "redis",
+                "helm.sh/chart": "redis-17.3.9"
+            }
+        },
+        "process": {
+            "matchPaths": [
+                {
+                    "path": "/bin/sh"
+                },
+                {
+                    "path": "/health/ping_liveness_local.sh",
+                    "fromSource": [
+                        {
+                            "path": "/bin/dash"
+                        },
+                        {
+                            "path": "/bin/sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/health/ping_readiness_local.sh",
+                    "fromSource": [
+                        {
+                            "path": "/bin/dash"
+                        },
+                        {
+                            "path": "/bin/sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/opt/bitnami/common/bin/redis-cli",
+                    "fromSource": [
+                        {
+                            "path": "/usr/bin/timeout"
+                        }
+                    ]
+                },
+                {
+                    "path": "/opt/bitnami/redis/bin/redis-cli",
+                    "fromSource": [
+                        {
+                            "path": "/usr/bin/timeout"
+                        }
+                    ]
+                },
+                {
+                    "path": "/usr/bin/awk",
+                    "fromSource": [
+                        {
+                            "path": "/bin/bash"
+                        }
+                    ]
+                },
+                {
+                    "path": "/usr/bin/head",
+                    "fromSource": [
+                        {
+                            "path": "/bin/bash"
+                        }
+                    ]
+                },
+                {
+                    "path": "/usr/bin/timeout",
+                    "fromSource": [
+                        {
+                            "path": "/bin/bash"
+                        },
+                        {
+                            "path": "/health/ping_liveness_local.sh"
+                        },
+                        {
+                            "path": "/health/ping_readiness_local.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/bin/dash"
+                }
+            ]
+        },
+        "file": {
+            "matchPaths": [
+                {
+                    "path": "/etc/group",
+                    "fromSource": [
+                        {
+                            "path": "/bin/sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/etc/ld.so.cache",
+                    "fromSource": [
+                        {
+                            "path": "/bin/sh"
+                        },
+                        {
+                            "path": "/health/ping_liveness_local.sh"
+                        },
+                        {
+                            "path": "/health/ping_readiness_local.sh"
+                        },
+                        {
+                            "path": "/usr/bin/awk"
+                        },
+                        {
+                            "path": "/usr/bin/head"
+                        },
+                        {
+                            "path": "/usr/bin/timeout"
+                        }
+                    ]
+                },
+                {
+                    "path": "/etc/nsswitch.conf",
+                    "fromSource": [
+                        {
+                            "path": "/health/ping_liveness_local.sh"
+                        },
+                        {
+                            "path": "/health/ping_readiness_local.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/etc/passwd",
+                    "fromSource": [
+                        {
+                            "path": "/bin/sh"
+                        },
+                        {
+                            "path": "/health/ping_liveness_local.sh"
+                        },
+                        {
+                            "path": "/health/ping_readiness_local.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/health/..2022_11_17_15_19_33.1178942800/ping_liveness_local.sh",
+                    "fromSource": [
+                        {
+                            "path": "/health/ping_liveness_local.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/health/..2022_11_17_15_19_33.1178942800/ping_readiness_local.sh",
+                    "fromSource": [
+                        {
+                            "path": "/health/ping_readiness_local.sh"
+                        }
+                    ]
+                },
+                {
+                    "path": "/usr/lib/x86_64-linux-gnu/libcrypto.so.1.1",
+                    "fromSource": [
+                        {
+                            "path": "/opt/bitnami/redis/bin/redis-cli"
+                        }
+                    ]
+                },
+                {
+                    "path": "/usr/lib/x86_64-linux-gnu/libssl.so.1.1",
+                    "fromSource": [
+                        {
+                            "path": "/opt/bitnami/redis/bin/redis-cli"
+                        }
+                    ]
+                }
+            ],
+            "matchDirectories": [
+                {
+                    "dir": "/",
+                    "recursive": true,
+                    "fromSource": [
+                        {
+                            "path": "/bin/dash"
+                        },
+                        {
+                            "path": "/bin/sh"
+                        }
+                    ]
+                },
+                {
+                    "dir": "/etc/",
+                    "recursive": true,
+                    "fromSource": [
+                        {
+                            "path": "/opt/bitnami/redis/bin/redis-cli"
+                        }
+                    ]
+                },
+                {
+                    "dir": "/sys/",
+                    "recursive": true,
+                    "fromSource": [
+                        {
+                            "path": "/opt/bitnami/redis/bin/redis-cli"
+                        }
+                    ]
+                },
+                {
+                    "dir": "/lib/x86_64-linux-gnu/",
+                    "recursive": true
+                }
+            ]
+        },
+        "network": {
+            "matchProtocols": [
+                {
+                    "protocol": "raw",
+                    "fromSource": [
+                        {
+                            "path": "/opt/bitnami/redis/bin/redis-cli"
+                        }
+                    ]
+                },
+                {
+                    "protocol": "tcp",
+                    "fromSource": [
+                        {
+                            "path": "/health/ping_liveness_local.sh"
+                        },
+                        {
+                            "path": "/health/ping_readiness_local.sh"
+                        },
+                        {
+                            "path": "/opt/bitnami/redis/bin/redis-cli"
+                        }
+                    ]
+                },
+                {
+                    "protocol": "udp",
+                    "fromSource": [
+                        {
+                            "path": "/opt/bitnami/redis/bin/redis-cli"
+                        }
+                    ]
+                }
+            ]
+        },
+        "action": "Allow"
+    }
+}

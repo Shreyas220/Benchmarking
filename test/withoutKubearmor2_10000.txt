@@ -1,28 +1,0 @@
- GET: rps=0.0 (overall: 0.0) avg_msec=-nan (overall: -nan)                                                          ====== GET ======
-  10000 requests completed in 0.02 seconds
-  1000 parallel clients
-  3 bytes payload
-  keep alive: 1
-  host configuration "save": 3600 1 300 100 60 10000
-  host configuration "appendonly": no
-  multi-thread: no
-
-Latency by percentile distribution:
-0.000% <= 5.127 milliseconds (cumulative count 1000)
-50.000% <= 5.471 milliseconds (cumulative count 5000)
-75.000% <= 5.655 milliseconds (cumulative count 8000)
-87.500% <= 5.719 milliseconds (cumulative count 9000)
-93.750% <= 6.207 milliseconds (cumulative count 10000)
-100.000% <= 6.207 milliseconds (cumulative count 10000)
-
-Cumulative distribution of latencies:
-0.000% <= 0.103 milliseconds (cumulative count 0)
-90.000% <= 6.103 milliseconds (cumulative count 9000)
-100.000% <= 7.103 milliseconds (cumulative count 10000)
-
-Summary:
-  throughput summary: 625000.00 requests per second
-  latency summary (msec):
-          avg       min       p50       p95       p99       max
-        5.514     5.120     5.471     6.207     6.207     6.207
-
