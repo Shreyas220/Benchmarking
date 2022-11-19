@@ -6,6 +6,8 @@ import (
 	"os"
 	"os/exec"
 	"time"
+
+	"github.com/Shreyas220/Benchmarking/utils"
 )
 
 func RunRedisBenchmark() {
@@ -18,19 +20,7 @@ func RunRedisBenchmark() {
 		runCommandWithoutKubearmor(n)
 	}
 
-	fmt.Println("Sleeping for 1 minute")
-	time.Sleep(60 * time.Second)
-
-	fmt.Println("installing kubearmor now ")
-	out, err := exec.Command("karmor", "install").Output()
-	if err != nil {
-		log.Fatal(err)
-	}
-	output := string(out)
-	fmt.Println("installed kubearmor  ", output)
-
-	fmt.Println("Sleeping for 1 minute")
-	time.Sleep(15 * time.Second)
+	utils.InstallKubearmor()
 
 	n2 := 100000
 	for i := 0; i < 3; i++ {
@@ -39,11 +29,11 @@ func RunRedisBenchmark() {
 		runCommandWithKubearmor(n2)
 	}
 
-	out, err = exec.Command("kubectl", "create", "ns", "explorer").Output()
+	out, err := exec.Command("kubectl", "create", "ns", "explorer").Output()
 	if err != nil {
 		log.Fatal(err)
 	}
-	output = string(out)
+	output := string(out)
 	fmt.Println(output)
 
 	fmt.Println("applying discovery engine")

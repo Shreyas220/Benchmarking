@@ -8,6 +8,7 @@ import (
 	"os"
 	"os/exec"
 	"strings"
+	"time"
 )
 
 func RunCommand(s string) (string, error) {
@@ -73,4 +74,21 @@ func FindValues(fileName string) (string, string) {
 	throughput := strings.ReplaceAll(str1, " ", "")
 
 	return throughput, avg
+}
+
+func InstallKubearmor() {
+	fmt.Println("Sleeping for 1 minute")
+	time.Sleep(60 * time.Second)
+
+	fmt.Println("installing kubearmor now ")
+	out, err := exec.Command("karmor", "install").Output()
+	if err != nil {
+		log.Fatal(err)
+	}
+	output := string(out)
+	fmt.Println("installed kubearmor  ", output)
+
+	fmt.Println("Sleeping for 1 minute")
+	time.Sleep(15 * time.Second)
+
 }

@@ -3,11 +3,13 @@ package main
 import (
 	"time"
 
+	nginxbenchmark "github.com/Shreyas220/Benchmarking/nginx_benchmark"
 	redisbenchmark "github.com/Shreyas220/Benchmarking/redis_benchmark"
 )
 
 func main() {
-	redis()
+	//redis()
+	nginxbenchmark.RunNginxBench()
 }
 
 func redis() {
