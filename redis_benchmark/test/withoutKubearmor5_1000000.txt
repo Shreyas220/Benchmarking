@@ -1,0 +1,107 @@
+ GET: rps=0.0 (overall: 0.0) avg_msec=-nan (overall: -nan)                                                          GET: rps=1645513.9 (overall: 1486839.2) avg_msec=218.362 (overall: 218.362)                                                                            GET: rps=2358582.5 (overall: 1917193.6) avg_msec=239.255 (overall: 230.557)                                                                            ====== GET ======
+  1060208 requests completed in 0.55 seconds
+  1000 parallel clients
+  3 bytes payload
+  keep alive: 1
+  host configuration "save": 3600 1 300 100 60 10000
+  host configuration "appendonly": no
+  multi-thread: no
+
+Latency by percentile distribution:
+0.000% <= 25.503 milliseconds (cumulative count 1000)
+50.000% <= 242.687 milliseconds (cumulative count 500900)
+75.000% <= 259.199 milliseconds (cumulative count 751900)
+87.500% <= 272.127 milliseconds (cumulative count 875900)
+93.750% <= 277.503 milliseconds (cumulative count 938900)
+96.875% <= 280.063 milliseconds (cumulative count 970900)
+98.438% <= 499.967 milliseconds (cumulative count 985000)
+99.219% <= 500.991 milliseconds (cumulative count 993000)
+99.609% <= 501.503 milliseconds (cumulative count 998000)
+99.805% <= 501.759 milliseconds (cumulative count 1000000)
+100.000% <= 501.759 milliseconds (cumulative count 1000000)
+
+Cumulative distribution of latencies:
+0.000% <= 0.103 milliseconds (cumulative count 0)
+0.900% <= 26.111 milliseconds (cumulative count 9000)
+2.700% <= 27.103 milliseconds (cumulative count 27000)
+4.800% <= 28.111 milliseconds (cumulative count 48000)
+6.400% <= 29.103 milliseconds (cumulative count 64000)
+7.900% <= 30.111 milliseconds (cumulative count 79000)
+9.400% <= 31.103 milliseconds (cumulative count 94000)
+9.500% <= 32.111 milliseconds (cumulative count 95000)
+9.841% <= 143.103 milliseconds (cumulative count 98408)
+10.590% <= 144.127 milliseconds (cumulative count 105900)
+11.390% <= 216.191 milliseconds (cumulative count 113900)
+12.890% <= 217.215 milliseconds (cumulative count 128900)
+14.290% <= 218.111 milliseconds (cumulative count 142900)
+15.690% <= 219.135 milliseconds (cumulative count 156900)
+17.290% <= 220.159 milliseconds (cumulative count 172900)
+18.690% <= 221.183 milliseconds (cumulative count 186900)
+20.190% <= 222.207 milliseconds (cumulative count 201900)
+21.590% <= 223.103 milliseconds (cumulative count 215900)
+23.190% <= 224.127 milliseconds (cumulative count 231900)
+24.790% <= 225.151 milliseconds (cumulative count 247900)
+26.290% <= 226.175 milliseconds (cumulative count 262900)
+27.790% <= 227.199 milliseconds (cumulative count 277900)
+29.290% <= 228.223 milliseconds (cumulative count 292900)
+30.090% <= 229.119 milliseconds (cumulative count 300900)
+31.590% <= 230.143 milliseconds (cumulative count 315900)
+33.090% <= 231.167 milliseconds (cumulative count 330900)
+34.290% <= 232.191 milliseconds (cumulative count 342900)
+35.790% <= 233.215 milliseconds (cumulative count 357900)
+37.190% <= 234.111 milliseconds (cumulative count 371900)
+38.790% <= 235.135 milliseconds (cumulative count 387900)
+40.290% <= 236.159 milliseconds (cumulative count 402900)
+41.890% <= 237.183 milliseconds (cumulative count 418900)
+43.490% <= 238.207 milliseconds (cumulative count 434900)
+44.690% <= 239.103 milliseconds (cumulative count 446900)
+46.190% <= 240.127 milliseconds (cumulative count 461900)
+47.790% <= 241.151 milliseconds (cumulative count 477900)
+49.290% <= 242.175 milliseconds (cumulative count 492900)
+50.890% <= 243.199 milliseconds (cumulative count 508900)
+52.390% <= 244.223 milliseconds (cumulative count 523900)
+53.790% <= 245.119 milliseconds (cumulative count 537900)
+55.390% <= 246.143 milliseconds (cumulative count 553900)
+56.890% <= 247.167 milliseconds (cumulative count 568900)
+58.490% <= 248.191 milliseconds (cumulative count 584900)
+60.090% <= 249.215 milliseconds (cumulative count 600900)
+61.390% <= 250.111 milliseconds (cumulative count 613900)
+62.990% <= 251.135 milliseconds (cumulative count 629900)
+64.490% <= 252.159 milliseconds (cumulative count 644900)
+66.090% <= 253.183 milliseconds (cumulative count 660900)
+67.590% <= 254.207 milliseconds (cumulative count 675900)
+68.890% <= 255.103 milliseconds (cumulative count 688900)
+70.490% <= 256.127 milliseconds (cumulative count 704900)
+72.090% <= 257.151 milliseconds (cumulative count 720900)
+73.590% <= 258.175 milliseconds (cumulative count 735900)
+75.190% <= 259.199 milliseconds (cumulative count 751900)
+76.190% <= 260.223 milliseconds (cumulative count 761900)
+77.590% <= 261.119 milliseconds (cumulative count 775900)
+79.190% <= 262.143 milliseconds (cumulative count 791900)
+80.690% <= 263.167 milliseconds (cumulative count 806900)
+82.290% <= 264.191 milliseconds (cumulative count 822900)
+83.490% <= 265.215 milliseconds (cumulative count 834900)
+84.890% <= 270.335 milliseconds (cumulative count 848900)
+86.090% <= 271.103 milliseconds (cumulative count 860900)
+87.590% <= 272.127 milliseconds (cumulative count 875900)
+88.790% <= 273.151 milliseconds (cumulative count 887900)
+90.290% <= 274.175 milliseconds (cumulative count 902900)
+91.390% <= 275.199 milliseconds (cumulative count 913900)
+92.190% <= 276.223 milliseconds (cumulative count 921900)
+93.490% <= 277.247 milliseconds (cumulative count 934900)
+94.990% <= 278.271 milliseconds (cumulative count 949900)
+95.990% <= 279.295 milliseconds (cumulative count 959900)
+97.190% <= 280.319 milliseconds (cumulative count 971900)
+97.290% <= 285.183 milliseconds (cumulative count 972900)
+97.927% <= 452.351 milliseconds (cumulative count 979270)
+98.200% <= 453.119 milliseconds (cumulative count 982000)
+98.700% <= 500.223 milliseconds (cumulative count 987000)
+99.500% <= 501.247 milliseconds (cumulative count 995000)
+100.000% <= 502.271 milliseconds (cumulative count 1000000)
+
+Summary:
+  throughput summary: 1917193.62 requests per second
+  latency summary (msec):
+          avg       min       p50       p95       p99       max
+      230.557    25.488   242.687   278.527   500.735   501.759
+

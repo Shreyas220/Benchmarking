@@ -1,11 +1,17 @@
 package main
 
-import "time"
+import (
+	"time"
+
+	redisbenchmark "github.com/Shreyas220/Benchmarking/redis_benchmark"
+)
 
 func main() {
+	redis()
+}
 
-	Redis_benchmark()
+func redis() {
+	redisbenchmark.RunRedisBenchmark()
 	time.Sleep(10 * time.Second)
-	Filetxtthing()
-
+	redisbenchmark.Filetxtthing()
 }

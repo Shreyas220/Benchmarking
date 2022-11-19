@@ -1,4 +1,4 @@
-package main
+package redisbenchmark
 
 import (
 	"fmt"
@@ -8,7 +8,7 @@ import (
 	"time"
 )
 
-func Redis_benchmark() {
+func RunRedisBenchmark() {
 
 	fmt.Println("Starting")
 	n := 100000
@@ -19,7 +19,8 @@ func Redis_benchmark() {
 	}
 
 	fmt.Println("Sleeping for 1 minute")
-	time.Sleep(10 * time.Second)
+	time.Sleep(60 * time.Second)
+
 	fmt.Println("installing kubearmor now ")
 	out, err := exec.Command("karmor", "install").Output()
 	if err != nil {
@@ -30,19 +31,21 @@ func Redis_benchmark() {
 
 	fmt.Println("Sleeping for 1 minute")
 	time.Sleep(15 * time.Second)
+
 	n2 := 100000
 	for i := 0; i < 3; i++ {
 		n2 = n2 * 10
 		fmt.Println("======WithKubearmor ", n2, " =====")
 		runCommandWithKubearmor(n2)
 	}
-	fmt.Println()
+
 	out, err = exec.Command("kubectl", "create", "ns", "explorer").Output()
 	if err != nil {
 		log.Fatal(err)
 	}
 	output = string(out)
 	fmt.Println(output)
+
 	fmt.Println("applying discovery engine")
 	out, err = exec.Command("kubectl", "apply", "-f", "https://raw.githubusercontent.com/kubearmor/discovery-engine/dev/deployments/k8s/deployment.yaml", "-n", "explorer").Output()
 	if err != nil {
@@ -51,10 +54,11 @@ func Redis_benchmark() {
 	output = string(out)
 	fmt.Println(output)
 
-	fmt.Println("apply discovery engine", output)
+	fmt.Println("apply discovery engine")
 	out, err = exec.Command("kubectl", "apply", "-f", "policy.yaml").Output()
 	if err != nil {
 		log.Fatal(err)
+		fmt.Println(out)
 	}
 	output = string(out)
 	fmt.Println(output)
