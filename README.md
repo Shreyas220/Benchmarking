@@ -2,7 +2,7 @@
 automating benchmarking Kubearmor and redis 
 
 
-## Steps to follow 
+## Steps to follow Before running Redis benchmark 
 ```
 helm install release bitnami/redis
 ```
@@ -29,8 +29,17 @@ redis-cli config set stop-writes-on-bgsave-error no
 redis-server
 ```
 
-now do 
-```
-go run *.go
-```
+## Steps to follow Before running nginx Benchamrk 
 
+none just have AKS setup
+
+
+
+## How to run benchmark  
+```
+go run main.go -b redis -n 1000000 -c 100 -i 3
+```
+- -n -> is the number of request to send (default 10000)
+- -c -> is the number of client (default 100)
+- -i -> is the number of iteration (default 2) for the first iteration n will be 10000 and for the second iteration n will be mulitplied by 10 and will be 100000 and so on 
+- -b is the name of benchmark (default nginx) two options -> "redis" and "nginx"
