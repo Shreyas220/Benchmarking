@@ -1,5 +1,5 @@
 # Benchmarking
-automating benchmarking Kubearmor and redis 
+automating benchmarking Kubearmor with redis and nginx 
 
 
 ## Steps to follow Before running Redis benchmark 
