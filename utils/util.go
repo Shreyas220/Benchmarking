@@ -29,17 +29,6 @@ func RunCommand(s string) (string, error) {
 
 }
 
-func CreateFile(name string) *csv.Writer {
-	file, err := os.Create(name)
-	defer file.Close()
-	if err != nil {
-		log.Fatalln("failed to open file", err)
-	}
-	w := csv.NewWriter(file)
-
-	return w
-}
-
 func CreateEmptyRecord(w csv.Writer) {
 	defer w.Flush() // Using Write
 	row := []string{}
@@ -61,7 +50,7 @@ func InstallKubearmor() {
 	output := string(out)
 	fmt.Println("installed kubearmor  ", output)
 
-	fmt.Println("Sleeping for 1 minute")
+	fmt.Println("Sleeping for 15 seconds")
 	time.Sleep(15 * time.Second)
 
 }
@@ -84,6 +73,9 @@ func CreateTxtFile(filename string, output string) {
 
 func ApplyDiscovery() {
 
+	fmt.Println("Sleeping for 15 seconds")
+	time.Sleep(15 * time.Second)
+
 	out, err := RunCommand("kubectl create ns explorer")
 	if err != nil {
 		log.Fatal(err)
@@ -98,6 +90,9 @@ func ApplyDiscovery() {
 	}
 	output = string(out)
 	fmt.Println(output)
+
+	fmt.Println("Sleeping for 15 seconds")
+	time.Sleep(15 * time.Second)
 
 }
 

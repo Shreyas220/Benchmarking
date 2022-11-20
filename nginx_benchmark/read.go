@@ -12,11 +12,16 @@ import (
 	"github.com/Shreyas220/Benchmarking/utils"
 )
 
-func Readtxt() {
-	w := utils.CreateFile("nginxBenchmark.csv")
+func Readtxt(config utils.Config) {
+	file, err := os.Create("nginxBenchmark.csv")
+	defer file.Close()
+	if err != nil {
+		log.Fatalln("failed to open file", err)
+	}
+	w := csv.NewWriter(file)
 
-	n := 1000
-	for i := 0; i < 3; i++ {
+	n := config.N
+	for i := 0; i < config.Iteration; i++ {
 		for i := 1; i < 11; i++ {
 			str := "./nginx_benchmark/test/withoutKubearmor" + fmt.Sprint(i) + "_" + fmt.Sprint(n) + ".txt"
 			CreateRecordNginx(*w, str, "withoutKubearmor", fmt.Sprint(n))
@@ -46,16 +51,16 @@ func Readtxt() {
 }
 
 func CreateRecordNginx(w csv.Writer, filename string, status string, n string) {
-	throughput, rps, rpsc := FindValues(filename)
+	throughput, rps := FindValues(filename)
 	defer w.Flush() // Using Write
-	row := []string{status, n, throughput, rps, rpsc}
+	row := []string{status, n, throughput, rps}
 	if err := w.Write(row); err != nil {
 		log.Fatalln("error writing record to file", err)
 	}
 
 }
 
-func FindValues(fileName string) (string, string, string) {
+func FindValues(fileName string) (string, string) {
 
 	fileBytes, err := ioutil.ReadFile(fileName)
 
@@ -71,15 +76,22 @@ func FindValues(fileName string) (string, string, string) {
 		fmt.Println(i, line)
 	}
 
-	str := fmt.Sprintln("this", sliceData[20])
-	str2 := fmt.Sprintln("this", sliceData[21])
-	str3 := fmt.Sprintln("this", sliceData[22])
+	str := fmt.Sprintln("this", sliceData[21])
+	str2 := fmt.Sprintln("this", sliceData[22])
 
 	fmt.Println(str)
 	sliceData1 := strings.Split(str, " ")
 	sliceData2 := strings.Split(str2, " ")
-	sliceData3 := strings.Split(str3, " ")
 
-	return sliceData1[7], sliceData2[10], sliceData3[10]
+	for i, line := range sliceData1 {
+		fmt.Println("slice 1 ", i, line)
+	}
+	for i, line := range sliceData2 {
+		fmt.Println("slice 2 ", i, line)
+	}
+
+	fmt.Println(sliceData1[7], sliceData2[10])
+
+	return sliceData1[7], sliceData2[10]
 
 }

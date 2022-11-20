@@ -13,7 +13,12 @@ import (
 )
 
 func Filetxtthing() {
-	w := utils.CreateFile("records.csv")
+	file, err := os.Create("records.csv")
+	defer file.Close()
+	if err != nil {
+		log.Fatalln("failed to open file", err)
+	}
+	w := csv.NewWriter(file)
 
 	n := 1000000
 	for i := 0; i < 3; i++ {

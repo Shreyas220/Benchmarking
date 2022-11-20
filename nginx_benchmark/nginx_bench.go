@@ -9,23 +9,34 @@ import (
 )
 
 func RunNginxBench(config utils.Config) {
+	fmt.Println("======Starting Nginx Test======")
+
 	setupNginx()
+	time.Sleep(15 * time.Second)
+
 	external_ip := getExternalIp()
 
+	fmt.Println("---Running test without kubearmor---")
 	runTest(config, external_ip, "withoutKubearmor")
 
+	fmt.Println("---Running test with kubearmor---")
 	utils.InstallKubearmor()
 	runTest(config, external_ip, "withKubearmor")
 
+	fmt.Println("---Running test with Policy---")
 	utils.ApplyDiscovery()
+	utils.ApplyPolicy("nginx_policy.yaml")
 	runTest(config, external_ip, "withPolicy")
+
+	Readtxt(config)
 
 }
 
 func runTest(config utils.Config, external_ip string, status string) {
 	n := config.N
 	for j := 0; j < config.Iteration; j++ {
-		for i := 0; i < 10; i++ {
+		fmt.Println("======", status, "-", n, "======")
+		for i := 1; i < 11; i++ {
 			filename := "./nginx_benchmark/test/" + status + fmt.Sprint(i) + "_" + fmt.Sprint(n) + ".txt"
 			s := "ab -q -m GET -n " + fmt.Sprint(config.N) + " -c " + fmt.Sprint(config.C) + " http://" + external_ip + "/hello-world-one"
 			output, err := utils.RunCommand(s)
@@ -33,6 +44,7 @@ func runTest(config utils.Config, external_ip string, status string) {
 				fmt.Println(err, "\nError with filename ", filename)
 			}
 			utils.CreateTxtFile(filename, output)
+			fmt.Println("Test ", status, " done ", i)
 		}
 		n = n * 10
 	}
@@ -90,6 +102,5 @@ func getExternalIp() string {
 		}
 	}
 
-	fmt.Println(external_ip)
 	return external_ip
 }
