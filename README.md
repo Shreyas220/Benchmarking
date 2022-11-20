@@ -31,7 +31,12 @@ redis-server
 
 ## Steps to follow Before running nginx Benchamrk 
 
-none just have AKS setup
+ just have apachebench AKS setup
+ 
+ ```
+ apt-get install apache2-utils
+
+ ```
 
 
 
