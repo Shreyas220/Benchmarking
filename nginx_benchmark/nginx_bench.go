@@ -8,9 +8,18 @@ import (
 	"github.com/Shreyas220/Benchmarking/utils"
 )
 
-func RunNginxBench() {
-	setupNginx()
-	getExternalIp()
+func RunNginxBench(config utils.Config) {
+
+	//setupNginx()
+	external_ip := getExternalIp()
+
+	s := "ab -q -m GET -n " + fmt.Sprint(config.N) + " -c " + fmt.Sprint(config.C) + " http://" + external_ip + "/hello-world-one"
+	str, err := utils.RunCommand(s)
+	if err != nil {
+		fmt.Println(err, str)
+	}
+	fmt.Println(str)
+
 }
 
 func setupNginx() {

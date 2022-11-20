@@ -11,6 +11,12 @@ import (
 	"time"
 )
 
+type Config struct {
+	N         int
+	C         int
+	Benchname string
+}
+
 func RunCommand(s string) (string, error) {
 	str := strings.Split(s, " ")
 	out, err := exec.Command(str[0], str[1:]...).Output()
