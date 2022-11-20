@@ -11,13 +11,16 @@ import (
 )
 
 func main() {
-	bench := flag.String("b", "redis", "# of iterations")
+	bench := flag.String("b", "nginx", "# of iterations")
 	num := flag.Int("n", 10000, "# of iterations")
 	client := flag.Int("c", 100, "# of client")
+	iteration := flag.Int("i", 2, "# of client")
 	flag.Parse()
+
 	config := utils.Config{}
 	config.N = *num
 	config.C = *client
+	config.Iteration = *iteration
 	config.Benchname = string(*bench)
 
 	switch config.Benchname {
@@ -26,9 +29,8 @@ func main() {
 	case "nginx":
 		nginxbenchmark.RunNginxBench(config)
 	default:
-		fmt.Println("correct flags not provided plesase try something like this ")
+		fmt.Println("correct flags not provided plesase try something like this \n->  go run main.go -b nginx -n 1000 -c 100 ")
 	}
-	//redis()
 
 }
 

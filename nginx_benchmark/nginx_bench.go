@@ -10,16 +10,28 @@ import (
 
 func RunNginxBench(config utils.Config) {
 
-	//setupNginx()
+	setupNginx()
 	external_ip := getExternalIp()
+	runTest(config, external_ip, "withoutKubearmor")
 
-	s := "ab -q -m GET -n " + fmt.Sprint(config.N) + " -c " + fmt.Sprint(config.C) + " http://" + external_ip + "/hello-world-one"
-	str, err := utils.RunCommand(s)
-	if err != nil {
-		fmt.Println(err, str)
+	utils.InstallKubearmor()
+	runTest(config, external_ip, "withKubearmor")
+
+	utils.ApplyDiscovery()
+	runTest(config, external_ip, "withPolicy")
+
+}
+
+func runTest(config utils.Config, external_ip string, status string) {
+	for i := 0; i < 10; i++ {
+		filename := "./nginx_benchmark/test/" + status + fmt.Sprint(i) + "_" + fmt.Sprint(config.N) + ".txt"
+		s := "ab -q -m GET -n " + fmt.Sprint(config.N) + " -c " + fmt.Sprint(config.C) + " http://" + external_ip + "/hello-world-one"
+		output, err := utils.RunCommand(s)
+		if err != nil {
+			fmt.Println(err, "\nError with filename ", filename)
+		}
+		utils.CreateTxtFile(filename, output)
 	}
-	fmt.Println(str)
-
 }
 
 func setupNginx() {
