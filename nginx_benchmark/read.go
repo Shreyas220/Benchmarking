@@ -38,7 +38,7 @@ func Readtxt(config utils.Config) {
 
 		for i := 1; i < 11; i++ {
 			str := "./nginx_benchmark/test/withPolicy" + fmt.Sprint(i) + "_" + fmt.Sprint(n) + ".txt"
-			CreateRecordNginx(*w, str, "withoutPolicy", fmt.Sprint(n))
+			CreateRecordNginx(*w, str, "withPolicy", fmt.Sprint(n))
 		}
 
 		utils.CreateEmptyRecord(*w)
