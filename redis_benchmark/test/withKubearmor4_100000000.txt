@@ -1,561 +1,0 @@
- GET: rps=0.0 (overall: 0.0) avg_msec=-nan (overall: -nan)                                                          GET: rps=524203.2 (overall: 466578.0) avg_msec=66.625 (overall: 66.625)                                                                        GET: rps=3238734.2 (overall: 1825085.1) avg_msec=278.041 (overall: 250.480)                                                                            GET: rps=644730.1 (overall: 1455582.6) avg_msec=205.785 (overall: 244.282)                                                                           GET: rps=3336765.0 (overall: 1902719.8) avg_msec=277.705 (overall: 258.214)                                                                            GET: rps=1441089.5 (overall: 1812362.6) avg_msec=236.971 (overall: 254.908)                                                                            GET: rps=3239554.0 (overall: 2041406.6) avg_msec=263.490 (overall: 257.094)                                                                            GET: rps=1898938.1 (overall: 2020102.2) avg_msec=290.652 (overall: 261.811)                                                                            GET: rps=1926183.4 (overall: 2008823.0) avg_msec=274.515 (overall: 263.274)                                                                            GET: rps=2075091.8 (overall: 2015928.1) avg_msec=283.105 (overall: 265.462)                                                                            GET: rps=1793703.4 (overall: 1993483.8) avg_msec=294.460 (overall: 268.098)                                                                            GET: rps=789105.1 (overall: 1885296.0) avg_msec=285.952 (overall: 268.769)                                                                           GET: rps=2432569.2 (overall: 1929759.8) avg_msec=309.464 (overall: 272.937)                                                                            GET: rps=894920.6 (overall: 1852285.2) avg_msec=225.821 (overall: 271.232)                                                                           GET: rps=2040414.5 (overall: 1865340.2) avg_msec=294.552 (overall: 273.003)                                                                            GET: rps=2102056.0 (overall: 1880701.1) avg_msec=320.809 (overall: 276.470)                                                                            GET: rps=2010496.0 (overall: 1888580.9) avg_msec=336.097 (overall: 280.323)                                                                            GET: rps=2010996.1 (overall: 1895613.6) avg_msec=286.973 (overall: 280.729)                                                                            GET: rps=1995442.4 (overall: 1901037.2) avg_msec=315.558 (overall: 282.715)                                                                            GET: rps=2032928.0 (overall: 1907807.9) avg_msec=299.054 (overall: 283.609)                                                                            GET: rps=1986773.0 (overall: 1911678.2) avg_msec=290.738 (overall: 283.972)                                                                            GET: rps=2024446.4 (overall: 1916947.0) avg_msec=258.964 (overall: 282.738)                                                                            GET: rps=1972412.6 (overall: 1919432.4) avg_msec=289.036 (overall: 283.028)                                                                            GET: rps=2012648.2 (overall: 1923445.4) avg_msec=267.776 (overall: 282.341)                                                                            GET: rps=2406274.5 (overall: 1943523.9) avg_msec=299.625 (overall: 283.231)                                                                            GET: rps=1566597.8 (overall: 1928701.9) avg_msec=242.344 (overall: 281.925)                                                                            GET: rps=2771301.5 (overall: 1960704.1) avg_msec=302.803 (overall: 283.046)                                                                            GET: rps=1231139.5 (overall: 1934110.9) avg_msec=204.134 (overall: 281.215)                                                                            GET: rps=2742000.0 (overall: 1962632.6) avg_msec=305.190 (overall: 282.397)                                                                            GET: rps=1249243.1 (overall: 1938399.2) avg_msec=222.348 (overall: 281.083)                                                                            GET: rps=1956430.4 (overall: 1938991.6) avg_msec=302.521 (overall: 281.793)                                                                            GET: rps=2065287.2 (overall: 1943163.6) avg_msec=326.512 (overall: 283.363)                                                                            GET: rps=0.0 (overall: 1883333.5) avg_msec=-nan (overall: 283.363)                                                                   GET: rps=2614884.5 (overall: 1905185.4) avg_msec=403.528 (overall: 288.290)                                                                            GET: rps=1382757.0 (overall: 1890032.8) avg_msec=240.662 (overall: 287.279)                                                                            GET: rps=2590984.0 (overall: 1909866.6) avg_msec=383.125 (overall: 290.958)                                                                            GET: rps=1397555.5 (overall: 1895769.4) avg_msec=211.989 (overall: 289.356)                                                                            GET: rps=2570698.2 (overall: 1913844.0) avg_msec=310.901 (overall: 290.131)                                                                            GET: rps=1456158.8 (overall: 1901906.9) avg_msec=279.983 (overall: 289.929)                                                                            GET: rps=2522103.8 (overall: 1917610.4) avg_msec=377.618 (overall: 292.849)                                                                            GET: rps=1475537.9 (overall: 1906693.5) avg_msec=211.489 (overall: 291.294)                                                                            GET: rps=2518560.0 (overall: 1921382.1) avg_msec=304.867 (overall: 291.721)                                                                            GET: rps=1475537.9 (overall: 1910889.1) avg_msec=245.673 (overall: 290.884)                                                                            GET: rps=2498571.5 (overall: 1924454.8) avg_msec=328.869 (overall: 292.023)                                                                            GET: rps=1491378.6 (overall: 1914721.2) avg_msec=212.803 (overall: 290.636)                                                                            GET: rps=2492685.5 (overall: 1927425.6) avg_msec=306.829 (overall: 291.096)                                                                            GET: rps=1498984.1 (overall: 1918174.8) avg_msec=217.337 (overall: 289.852)                                                                            GET: rps=2479107.8 (overall: 1929984.2) avg_msec=325.844 (overall: 290.825)                                                                            GET: rps=1516271.0 (overall: 1921453.6) avg_msec=214.338 (overall: 289.581)                                                                            GET: rps=2467793.0 (overall: 1932491.4) avg_msec=305.523 (overall: 289.992)                                                                            GET: rps=1532111.6 (overall: 1924562.6) avg_msec=267.936 (overall: 289.644)                                                                            GET: rps=1870638.4 (overall: 1923198.5) avg_msec=376.115 (overall: 291.772)                                                                            GET: rps=1688255.1 (overall: 1918749.4) avg_msec=368.107 (overall: 293.044)                                                                            GET: rps=924805.2 (overall: 1896536.4) avg_msec=402.967 (overall: 294.242)                                                                           GET: rps=1151875.5 (overall: 1882683.5) avg_msec=403.634 (overall: 295.487)                                                                            GET: rps=3163889.5 (overall: 1905724.8) avg_msec=256.727 (overall: 294.330)                                                                            GET: rps=1359939.0 (overall: 1895746.0) avg_msec=285.631 (overall: 294.216)                                                                            GET: rps=2657797.8 (overall: 1909685.0) avg_msec=301.766 (overall: 294.408)                                                                            GET: rps=2118693.2 (overall: 1913218.2) avg_msec=277.296 (overall: 294.087)                                                                            GET: rps=2257240.5 (overall: 1919093.9) avg_msec=304.616 (overall: 294.299)                                                                            GET: rps=1670793.6 (overall: 1915019.8) avg_msec=223.444 (overall: 293.285)                                                                            GET: rps=1242076.4 (overall: 1903732.1) avg_msec=323.801 (overall: 293.619)                                                                            GET: rps=1066312.5 (overall: 1890228.8) avg_msec=330.514 (overall: 293.954)                                                                            GET: rps=1600000.1 (overall: 1885711.6) avg_msec=313.587 (overall: 294.213)                                                                            GET: rps=2393600.0 (overall: 1893464.6) avg_msec=376.400 (overall: 295.799)                                                                            GET: rps=1593650.8 (overall: 1888921.4) avg_msec=216.965 (overall: 294.791)                                                                            GET: rps=2384063.8 (overall: 1896284.0) avg_msec=302.051 (overall: 294.927)                                                                            GET: rps=1611314.9 (overall: 1892108.5) avg_msec=215.872 (overall: 293.941)                                                                            GET: rps=2372749.2 (overall: 1899049.1) avg_msec=299.152 (overall: 294.035)                                                                            GET: rps=1611314.9 (overall: 1894953.4) avg_msec=217.307 (overall: 293.106)                                                                            GET: rps=2372749.2 (overall: 1901659.0) avg_msec=363.119 (overall: 294.332)                                                                            GET: rps=1489115.6 (overall: 1895949.2) avg_msec=248.717 (overall: 293.836)                                                                            GET: rps=2485047.5 (overall: 1904023.1) avg_msec=348.215 (overall: 294.809)                                                                            GET: rps=1432061.2 (overall: 1897417.4) avg_msec=287.981 (overall: 294.737)                                                                            GET: rps=1798671.8 (overall: 1896033.9) avg_msec=377.400 (overall: 295.836)                                                                            GET: rps=2092571.4 (overall: 1898618.0) avg_msec=294.551 (overall: 295.817)                                                                            GET: rps=1887682.5 (overall: 1898476.2) avg_msec=289.732 (overall: 295.738)                                                                            GET: rps=2102438.2 (overall: 1901079.1) avg_msec=287.352 (overall: 295.620)                                                                            GET: rps=1891952.2 (overall: 1900964.0) avg_msec=306.309 (overall: 295.754)                                                                            GET: rps=2101163.5 (overall: 1903455.4) avg_msec=260.309 (overall: 295.267)                                                                            GET: rps=2399128.5 (overall: 1909691.6) avg_msec=298.318 (overall: 295.315)                                                                            GET: rps=1537960.5 (overall: 1905143.9) avg_msec=277.353 (overall: 295.138)                                                                            GET: rps=2377027.2 (overall: 1910936.2) avg_msec=358.036 (overall: 296.098)                                                                            GET: rps=1550215.2 (overall: 1906663.0) avg_msec=212.022 (overall: 295.289)                                                                            GET: rps=2424190.5 (overall: 1912745.9) avg_msec=298.699 (overall: 295.339)                                                                            GET: rps=1557587.2 (overall: 1908620.0) avg_msec=238.499 (overall: 294.801)                                                                            GET: rps=2410666.8 (overall: 1914385.4) avg_msec=324.951 (overall: 295.237)                                                                            GET: rps=1572844.8 (overall: 1910522.9) avg_msec=213.820 (overall: 294.479)                                                                            GET: rps=2401650.8 (overall: 1916036.5) avg_msec=300.763 (overall: 294.567)                                                                            GET: rps=1577873.0 (overall: 1912282.4) avg_msec=287.873 (overall: 294.506)                                                                            GET: rps=2353031.2 (overall: 1917197.6) avg_msec=384.841 (overall: 295.742)                                                                            GET: rps=1593211.2 (overall: 1913693.4) avg_msec=260.624 (overall: 295.426)                                                                            GET: rps=1998378.0 (overall: 1914742.1) avg_msec=331.045 (overall: 295.886)                                                                            GET: rps=165470.4 (overall: 1896107.8) avg_msec=370.422 (overall: 295.956)                                                                           GET: rps=3346595.5 (overall: 1911934.4) avg_msec=364.364 (overall: 297.262)                                                                            GET: rps=1478444.4 (overall: 1907432.2) avg_msec=228.005 (overall: 296.705)                                                                            GET: rps=2488400.0 (overall: 1913591.6) avg_msec=302.309 (overall: 296.782)                                                                            GET: rps=1427904.8 (overall: 1908651.6) avg_msec=245.858 (overall: 296.394)                                                                            GET: rps=2467694.5 (overall: 1914788.5) avg_msec=298.825 (overall: 296.429)                                                                            GET: rps=1434294.9 (overall: 1910022.0) avg_msec=268.036 (overall: 296.217)                                                                            GET: rps=2465228.2 (overall: 1915540.1) avg_msec=323.707 (overall: 296.569)                                                                            GET: rps=1483460.2 (overall: 1911321.1) avg_msec=288.296 (overall: 296.506)                                                                            GET: rps=1952095.8 (overall: 1911713.9) avg_msec=335.621 (overall: 296.891)                                                                            GET: rps=2045545.9 (overall: 1912990.8) avg_msec=280.339 (overall: 296.722)                                                                            GET: rps=2692412.8 (overall: 1920385.2) avg_msec=306.093 (overall: 296.847)                                                                            GET: rps=1276423.5 (overall: 1914261.9) avg_msec=214.182 (overall: 296.323)                                                                            GET: rps=2687299.0 (overall: 1921430.1) avg_msec=314.855 (overall: 296.563)                                                                            GET: rps=1316412.6 (overall: 1915849.5) avg_msec=209.262 (overall: 296.010)                                                                            GET: rps=2325893.2 (overall: 1920024.1) avg_msec=307.102 (overall: 296.146)                                                                            GET: rps=56710.4 (overall: 1902701.8) avg_msec=402.613 (overall: 296.176)                                                                          GET: rps=1467428.5 (overall: 1898800.0) avg_msec=526.782 (overall: 297.773)                                                                            GET: rps=1909172.2 (overall: 1898920.6) avg_msec=597.896 (overall: 301.285)                                                                            GET: rps=1168576.0 (overall: 1892557.1) avg_msec=203.475 (overall: 300.759)                                                                            GET: rps=516158.7 (overall: 1880574.1) avg_msec=475.587 (overall: 301.176)                                                                           GET: rps=2517270.8 (overall: 1886134.2) avg_msec=453.068 (overall: 302.947)                                                                            GET: rps=897732.2 (overall: 1877610.6) avg_msec=308.978 (overall: 302.972)                                                                           GET: rps=1878852.6 (overall: 1877621.1) avg_msec=371.312 (overall: 303.550)                                                                            GET: rps=1964342.0 (overall: 1878399.4) avg_msec=377.946 (overall: 304.248)                                                                            GET: rps=1772902.2 (overall: 1877471.5) avg_msec=352.463 (overall: 304.648)                                                                            GET: rps=1177976.5 (overall: 1871622.1) avg_msec=374.390 (overall: 305.015)                                                                            GET: rps=912096.0 (overall: 1863819.9) avg_msec=309.967 (overall: 305.035)                                                                           GET: rps=3075601.8 (overall: 1873632.8) avg_msec=362.098 (overall: 305.793)                                                                            GET: rps=908462.2 (overall: 1865879.8) avg_msec=232.544 (overall: 305.507)                                                                           GET: rps=3075601.8 (overall: 1875519.8) avg_msec=289.534 (overall: 305.298)                                                                            GET: rps=908462.2 (overall: 1867874.4) avg_msec=258.685 (overall: 305.119)                                                                           GET: rps=3063396.8 (overall: 1877288.9) avg_msec=316.350 (overall: 305.263)                                                                            GET: rps=1861434.1 (overall: 1877158.6) avg_msec=271.251 (overall: 304.986)                                                                            GET: rps=2561375.5 (overall: 1883149.4) avg_msec=276.345 (overall: 304.645)                                                                            GET: rps=678883.8 (overall: 1873679.4) avg_msec=333.459 (overall: 304.727)                                                                           GET: rps=2322687.2 (overall: 1877196.0) avg_msec=334.148 (overall: 305.013)                                                                            GET: rps=908462.2 (overall: 1869898.4) avg_msec=332.085 (overall: 305.112)                                                                           GET: rps=1813815.5 (overall: 1869464.2) avg_msec=316.528 (overall: 305.197)                                                                            GET: rps=2105211.2 (overall: 1871213.1) avg_msec=342.001 (overall: 305.505)                                                                            GET: rps=1878852.6 (overall: 1871269.4) avg_msec=315.549 (overall: 305.579)                                                                            GET: rps=2105211.2 (overall: 1872979.8) avg_msec=289.272 (overall: 305.445)                                                                            GET: rps=1878852.6 (overall: 1873022.5) avg_msec=326.788 (overall: 305.600)                                                                            GET: rps=2088569.2 (overall: 1874588.0) avg_msec=313.970 (overall: 305.668)                                                                            GET: rps=1878852.6 (overall: 1874618.2) avg_msec=265.627 (overall: 305.381)                                                                            GET: rps=2096857.1 (overall: 1876203.1) avg_msec=270.306 (overall: 305.101)                                                                            GET: rps=2106825.2 (overall: 1877836.1) avg_msec=287.088 (overall: 304.958)                                                                            GET: rps=1868844.8 (overall: 1877773.1) avg_msec=276.110 (overall: 304.757)                                                                            GET: rps=3075601.8 (overall: 1886103.2) avg_msec=289.697 (overall: 304.586)                                                                            GET: rps=908462.2 (overall: 1879351.2) avg_msec=238.417 (overall: 304.365)                                                                           GET: rps=3075601.8 (overall: 1887556.1) avg_msec=290.414 (overall: 304.210)                                                                            GET: rps=908462.2 (overall: 1880886.5) avg_msec=238.158 (overall: 303.992)                                                                           GET: rps=3087904.0 (overall: 1889020.9) avg_msec=289.024 (overall: 303.827)                                                                            GET: rps=2573079.8 (overall: 1893836.5) avg_msec=263.110 (overall: 303.438)                                                                            GET: rps=1171304.4 (overall: 1888537.9) avg_msec=303.668 (overall: 303.439)                                                                            GET: rps=908462.2 (overall: 1882044.6) avg_msec=321.814 (overall: 303.498)                                                                           GET: rps=2473703.2 (overall: 1886123.6) avg_msec=338.663 (overall: 303.816)                                                                            GET: rps=1392095.8 (overall: 1882894.2) avg_msec=298.810 (overall: 303.791)                                                                            GET: rps=1878852.6 (overall: 1882868.1) avg_msec=295.864 (overall: 303.740)                                                                            GET: rps=2096857.1 (overall: 1884254.2) avg_msec=325.998 (overall: 303.901)                                                                            GET: rps=1878852.6 (overall: 1884219.6) avg_msec=292.044 (overall: 303.825)                                                                            GET: rps=2105211.2 (overall: 1885627.4) avg_msec=280.516 (overall: 303.659)                                                                            GET: rps=1871396.8 (overall: 1885536.8) avg_msec=304.322 (overall: 303.663)                                                                            GET: rps=1201536.0 (overall: 1881251.9) avg_msec=353.141 (overall: 303.861)                                                                            GET: rps=2105377.2 (overall: 1882774.8) avg_msec=336.944 (overall: 304.112)                                                                            GET: rps=2633666.8 (overall: 1887676.1) avg_msec=292.583 (overall: 304.007)                                                                            GET: rps=1831460.2 (overall: 1887328.1) avg_msec=293.952 (overall: 303.947)                                                                            GET: rps=2145307.0 (overall: 1888909.5) avg_msec=288.873 (overall: 303.842)                                                                            GET: rps=1838757.1 (overall: 1888603.9) avg_msec=282.295 (overall: 303.714)                                                                            GET: rps=2136793.5 (overall: 1890112.8) avg_msec=274.309 (overall: 303.512)                                                                            GET: rps=1838757.1 (overall: 1889803.8) avg_msec=287.773 (overall: 303.420)                                                                            GET: rps=2136793.5 (overall: 1891287.4) avg_msec=285.059 (overall: 303.295)                                                                            GET: rps=2257666.8 (overall: 1893578.5) avg_msec=287.115 (overall: 303.175)                                                                            GET: rps=1590456.6 (overall: 1891765.5) avg_msec=266.206 (overall: 302.989)                                                                            GET: rps=1838757.1 (overall: 1891454.1) avg_msec=329.054 (overall: 303.138)                                                                            GET: rps=2145307.0 (overall: 1892936.9) avg_msec=321.559 (overall: 303.260)                                                                            GET: rps=1831460.2 (overall: 1892578.5) avg_msec=313.117 (overall: 303.315)                                                                            GET: rps=2153888.0 (overall: 1894081.1) avg_msec=306.774 (overall: 303.338)                                                                            GET: rps=0.0 (overall: 1883208.5) avg_msec=-nan (overall: 303.338)                                                                   GET: rps=2919776.0 (overall: 1889101.2) avg_msec=399.436 (overall: 304.182)                                                                            GET: rps=2479945.8 (overall: 1893038.4) avg_msec=272.149 (overall: 303.903)                                                                            GET: rps=1714164.8 (overall: 1892014.0) avg_msec=296.755 (overall: 303.866)                                                                            GET: rps=2207404.0 (overall: 1893810.0) avg_msec=292.773 (overall: 303.792)                                                                            GET: rps=2136793.5 (overall: 1895169.6) avg_msec=275.640 (overall: 303.614)                                                                            GET: rps=1846112.0 (overall: 1894898.8) avg_msec=279.774 (overall: 303.486)                                                                            GET: rps=2145307.0 (overall: 1896279.1) avg_msec=276.899 (overall: 303.320)                                                                            GET: rps=0.0 (overall: 1885883.5) avg_msec=-nan (overall: 303.320)                                                                   GET: rps=2919776.0 (overall: 1891498.2) avg_msec=392.631 (overall: 304.069)                                                                            GET: rps=2760694.5 (overall: 1896473.1) avg_msec=272.178 (overall: 303.803)                                                                            GET: rps=2145307.0 (overall: 1897814.9) avg_msec=276.137 (overall: 303.635)                                                                            GET: rps=1838757.1 (overall: 1897498.1) avg_msec=284.702 (overall: 303.536)                                                                            GET: rps=2145307.0 (overall: 1898819.9) avg_msec=277.601 (overall: 303.380)                                                                            GET: rps=1846112.0 (overall: 1898541.4) avg_msec=281.780 (overall: 303.269)                                                                            GET: rps=2136793.5 (overall: 1899803.9) avg_msec=290.777 (overall: 303.194)                                                                            GET: rps=0.0 (overall: 1889829.2) avg_msec=-nan (overall: 303.194)                                                                   GET: rps=2786045.8 (overall: 1894714.1) avg_msec=423.932 (overall: 304.162)                                                                            GET: rps=1075920.4 (overall: 1890460.8) avg_msec=314.607 (overall: 304.193)                                                                            GET: rps=1831460.2 (overall: 1890154.8) avg_msec=301.577 (overall: 304.180)                                                                            GET: rps=2145307.0 (overall: 1891466.5) avg_msec=334.097 (overall: 304.354)                                                                            GET: rps=1838757.1 (overall: 1891196.8) avg_msec=330.439 (overall: 304.484)                                                                            GET: rps=2145307.0 (overall: 1892489.9) avg_msec=303.726 (overall: 304.480)                                                                            GET: rps=1728569.4 (overall: 1891607.5) avg_msec=358.992 (overall: 304.748)                                                                            GET: rps=2145307.0 (overall: 1892885.1) avg_msec=321.763 (overall: 304.845)                                                                            GET: rps=1831460.2 (overall: 1892576.0) avg_msec=279.292 (overall: 304.721)                                                                            GET: rps=2136793.5 (overall: 1893798.4) avg_msec=272.091 (overall: 304.536)                                                                            GET: rps=1831460.2 (overall: 1893488.0) avg_msec=279.029 (overall: 304.413)                                                                            GET: rps=2145307.0 (overall: 1894731.0) avg_msec=281.193 (overall: 304.284)                                                                            GET: rps=2494134.5 (overall: 1897698.5) avg_msec=301.203 (overall: 304.264)                                                                            GET: rps=1470055.9 (overall: 1895608.4) avg_msec=260.731 (overall: 304.099)                                                                            GET: rps=2896603.2 (overall: 1900496.5) avg_msec=293.676 (overall: 304.021)                                                                            GET: rps=1075920.4 (overall: 1896505.2) avg_msec=256.025 (overall: 303.889)                                                                            GET: rps=2919776.0 (overall: 1901414.9) avg_msec=304.082 (overall: 303.891)                                                                            GET: rps=1080224.0 (overall: 1897493.6) avg_msec=235.016 (overall: 303.703)                                                                            ====== GET ======
-  100000000 requests completed in 52.56 seconds
-  1000 parallel clients
-  3 bytes payload
-  keep alive: 1
-  host configuration "save": 3600 1 300 100 60 10000
-  host configuration "appendonly": no
-  multi-thread: no
-
-Latency by percentile distribution:
-0.000% <= 26.399 milliseconds (cumulative count 1000)
-50.000% <= 304.383 milliseconds (cumulative count 50003000)
-75.000% <= 353.535 milliseconds (cumulative count 75004000)
-87.500% <= 397.823 milliseconds (cumulative count 87532000)
-93.750% <= 444.671 milliseconds (cumulative count 93765000)
-96.875% <= 477.183 milliseconds (cumulative count 96894000)
-98.438% <= 504.831 milliseconds (cumulative count 98445000)
-99.219% <= 539.647 milliseconds (cumulative count 99225000)
-99.609% <= 582.655 milliseconds (cumulative count 99613000)
-99.805% <= 647.679 milliseconds (cumulative count 99806000)
-99.902% <= 676.351 milliseconds (cumulative count 99904000)
-99.951% <= 686.591 milliseconds (cumulative count 99952000)
-99.976% <= 696.831 milliseconds (cumulative count 99976000)
-99.988% <= 697.855 milliseconds (cumulative count 99990000)
-99.994% <= 698.367 milliseconds (cumulative count 99997000)
-99.998% <= 698.879 milliseconds (cumulative count 100000000)
-100.000% <= 698.879 milliseconds (cumulative count 100000000)
-
-Cumulative distribution of latencies:
-0.000% <= 0.103 milliseconds (cumulative count 0)
-0.004% <= 27.103 milliseconds (cumulative count 4000)
-0.007% <= 31.103 milliseconds (cumulative count 7000)
-0.011% <= 32.111 milliseconds (cumulative count 11000)
-0.024% <= 62.111 milliseconds (cumulative count 24000)
-0.039% <= 63.103 milliseconds (cumulative count 39000)
-0.055% <= 64.127 milliseconds (cumulative count 55000)
-0.071% <= 65.119 milliseconds (cumulative count 71000)
-0.084% <= 66.111 milliseconds (cumulative count 84000)
-0.100% <= 67.135 milliseconds (cumulative count 100000)
-0.115% <= 68.159 milliseconds (cumulative count 115000)
-0.128% <= 69.119 milliseconds (cumulative count 128000)
-0.144% <= 70.143 milliseconds (cumulative count 144000)
-0.159% <= 71.103 milliseconds (cumulative count 159000)
-0.175% <= 72.127 milliseconds (cumulative count 175000)
-0.191% <= 73.151 milliseconds (cumulative count 191000)
-0.206% <= 74.111 milliseconds (cumulative count 206000)
-0.221% <= 75.135 milliseconds (cumulative count 221000)
-0.237% <= 76.159 milliseconds (cumulative count 237000)
-0.252% <= 77.119 milliseconds (cumulative count 252000)
-0.268% <= 78.143 milliseconds (cumulative count 268000)
-0.276% <= 79.103 milliseconds (cumulative count 276000)
-0.280% <= 80.127 milliseconds (cumulative count 280000)
-0.288% <= 81.151 milliseconds (cumulative count 288000)
-0.295% <= 83.135 milliseconds (cumulative count 295000)
-0.309% <= 84.159 milliseconds (cumulative count 309000)
-0.322% <= 85.119 milliseconds (cumulative count 322000)
-0.337% <= 86.143 milliseconds (cumulative count 337000)
-0.348% <= 87.103 milliseconds (cumulative count 348000)
-0.349% <= 88.127 milliseconds (cumulative count 349000)
-0.354% <= 89.151 milliseconds (cumulative count 354000)
-0.368% <= 90.111 milliseconds (cumulative count 368000)
-0.387% <= 91.135 milliseconds (cumulative count 387000)
-0.391% <= 92.159 milliseconds (cumulative count 391000)
-0.394% <= 93.119 milliseconds (cumulative count 394000)
-0.402% <= 94.143 milliseconds (cumulative count 402000)
-0.407% <= 95.103 milliseconds (cumulative count 407000)
-0.413% <= 96.127 milliseconds (cumulative count 413000)
-0.417% <= 97.151 milliseconds (cumulative count 417000)
-0.419% <= 98.111 milliseconds (cumulative count 419000)
-0.421% <= 106.111 milliseconds (cumulative count 421000)
-0.426% <= 107.135 milliseconds (cumulative count 426000)
-0.429% <= 108.159 milliseconds (cumulative count 429000)
-0.431% <= 120.127 milliseconds (cumulative count 431000)
-0.437% <= 121.151 milliseconds (cumulative count 437000)
-0.440% <= 122.111 milliseconds (cumulative count 440000)
-0.454% <= 123.135 milliseconds (cumulative count 454000)
-0.468% <= 124.159 milliseconds (cumulative count 468000)
-0.479% <= 125.119 milliseconds (cumulative count 479000)
-0.492% <= 126.143 milliseconds (cumulative count 492000)
-0.505% <= 127.103 milliseconds (cumulative count 505000)
-0.518% <= 128.127 milliseconds (cumulative count 518000)
-0.536% <= 129.151 milliseconds (cumulative count 536000)
-0.554% <= 130.111 milliseconds (cumulative count 554000)
-0.573% <= 131.199 milliseconds (cumulative count 573000)
-0.601% <= 132.223 milliseconds (cumulative count 601000)
-0.622% <= 133.119 milliseconds (cumulative count 622000)
-0.658% <= 134.143 milliseconds (cumulative count 658000)
-0.673% <= 135.167 milliseconds (cumulative count 673000)
-0.684% <= 136.191 milliseconds (cumulative count 684000)
-0.698% <= 137.215 milliseconds (cumulative count 698000)
-0.709% <= 138.111 milliseconds (cumulative count 709000)
-0.722% <= 139.135 milliseconds (cumulative count 722000)
-0.737% <= 140.159 milliseconds (cumulative count 737000)
-0.752% <= 141.183 milliseconds (cumulative count 752000)
-0.764% <= 142.207 milliseconds (cumulative count 764000)
-0.777% <= 143.103 milliseconds (cumulative count 777000)
-0.787% <= 144.127 milliseconds (cumulative count 787000)
-0.790% <= 147.199 milliseconds (cumulative count 790000)
-0.802% <= 149.119 milliseconds (cumulative count 802000)
-0.816% <= 150.143 milliseconds (cumulative count 816000)
-0.832% <= 151.167 milliseconds (cumulative count 832000)
-0.852% <= 152.191 milliseconds (cumulative count 852000)
-0.870% <= 153.215 milliseconds (cumulative count 870000)
-0.886% <= 154.111 milliseconds (cumulative count 886000)
-0.900% <= 155.135 milliseconds (cumulative count 900000)
-0.915% <= 156.159 milliseconds (cumulative count 915000)
-0.929% <= 157.183 milliseconds (cumulative count 929000)
-0.949% <= 158.207 milliseconds (cumulative count 949000)
-0.965% <= 159.103 milliseconds (cumulative count 965000)
-0.980% <= 160.127 milliseconds (cumulative count 980000)
-0.995% <= 161.151 milliseconds (cumulative count 995000)
-1.012% <= 162.175 milliseconds (cumulative count 1012000)
-1.036% <= 163.199 milliseconds (cumulative count 1036000)
-1.071% <= 164.223 milliseconds (cumulative count 1071000)
-1.091% <= 165.119 milliseconds (cumulative count 1091000)
-1.093% <= 166.143 milliseconds (cumulative count 1093000)
-1.101% <= 167.167 milliseconds (cumulative count 1101000)
-1.111% <= 168.191 milliseconds (cumulative count 1111000)
-1.115% <= 169.215 milliseconds (cumulative count 1115000)
-1.118% <= 175.103 milliseconds (cumulative count 1118000)
-1.134% <= 176.127 milliseconds (cumulative count 1134000)
-1.154% <= 177.151 milliseconds (cumulative count 1154000)
-1.174% <= 178.175 milliseconds (cumulative count 1174000)
-1.190% <= 179.199 milliseconds (cumulative count 1190000)
-1.220% <= 180.223 milliseconds (cumulative count 1220000)
-1.266% <= 181.119 milliseconds (cumulative count 1266000)
-1.315% <= 182.143 milliseconds (cumulative count 1315000)
-1.372% <= 183.167 milliseconds (cumulative count 1372000)
-1.420% <= 184.191 milliseconds (cumulative count 1420000)
-1.511% <= 185.215 milliseconds (cumulative count 1511000)
-1.603% <= 186.111 milliseconds (cumulative count 1603000)
-1.722% <= 187.135 milliseconds (cumulative count 1722000)
-1.943% <= 188.159 milliseconds (cumulative count 1943000)
-2.233% <= 189.183 milliseconds (cumulative count 2233000)
-2.592% <= 190.207 milliseconds (cumulative count 2592000)
-2.878% <= 191.103 milliseconds (cumulative count 2878000)
-3.189% <= 192.127 milliseconds (cumulative count 3189000)
-3.496% <= 193.151 milliseconds (cumulative count 3496000)
-3.794% <= 194.175 milliseconds (cumulative count 3794000)
-4.123% <= 195.199 milliseconds (cumulative count 4123000)
-4.444% <= 196.223 milliseconds (cumulative count 4444000)
-4.724% <= 197.119 milliseconds (cumulative count 4724000)
-5.058% <= 198.143 milliseconds (cumulative count 5058000)
-5.400% <= 199.167 milliseconds (cumulative count 5400000)
-5.776% <= 200.191 milliseconds (cumulative count 5776000)
-6.171% <= 201.215 milliseconds (cumulative count 6171000)
-6.534% <= 202.111 milliseconds (cumulative count 6534000)
-7.032% <= 203.135 milliseconds (cumulative count 7032000)
-7.629% <= 204.159 milliseconds (cumulative count 7629000)
-8.225% <= 205.183 milliseconds (cumulative count 8225000)
-8.842% <= 206.207 milliseconds (cumulative count 8842000)
-9.389% <= 207.103 milliseconds (cumulative count 9389000)
-10.015% <= 208.127 milliseconds (cumulative count 10015000)
-10.635% <= 209.151 milliseconds (cumulative count 10635000)
-11.335% <= 210.175 milliseconds (cumulative count 11335000)
-12.079% <= 211.199 milliseconds (cumulative count 12079000)
-12.801% <= 212.223 milliseconds (cumulative count 12801000)
-13.453% <= 213.119 milliseconds (cumulative count 13453000)
-14.171% <= 214.143 milliseconds (cumulative count 14171000)
-14.877% <= 215.167 milliseconds (cumulative count 14877000)
-15.627% <= 216.191 milliseconds (cumulative count 15627000)
-16.369% <= 217.215 milliseconds (cumulative count 16369000)
-17.040% <= 218.111 milliseconds (cumulative count 17040000)
-17.812% <= 219.135 milliseconds (cumulative count 17812000)
-18.598% <= 220.159 milliseconds (cumulative count 18598000)
-19.390% <= 221.183 milliseconds (cumulative count 19390000)
-20.193% <= 222.207 milliseconds (cumulative count 20193000)
-20.908% <= 223.103 milliseconds (cumulative count 20908000)
-21.677% <= 224.127 milliseconds (cumulative count 21677000)
-22.384% <= 225.151 milliseconds (cumulative count 22384000)
-23.087% <= 226.175 milliseconds (cumulative count 23087000)
-23.808% <= 227.199 milliseconds (cumulative count 23808000)
-24.569% <= 228.223 milliseconds (cumulative count 24569000)
-25.260% <= 229.119 milliseconds (cumulative count 25260000)
-25.988% <= 230.143 milliseconds (cumulative count 25988000)
-26.689% <= 231.167 milliseconds (cumulative count 26689000)
-27.330% <= 232.191 milliseconds (cumulative count 27330000)
-27.948% <= 233.215 milliseconds (cumulative count 27948000)
-28.409% <= 234.111 milliseconds (cumulative count 28409000)
-28.931% <= 235.135 milliseconds (cumulative count 28931000)
-29.381% <= 236.159 milliseconds (cumulative count 29381000)
-29.795% <= 237.183 milliseconds (cumulative count 29795000)
-30.191% <= 238.207 milliseconds (cumulative count 30191000)
-30.552% <= 239.103 milliseconds (cumulative count 30552000)
-30.944% <= 240.127 milliseconds (cumulative count 30944000)
-31.289% <= 241.151 milliseconds (cumulative count 31289000)
-31.608% <= 242.175 milliseconds (cumulative count 31608000)
-31.971% <= 243.199 milliseconds (cumulative count 31971000)
-32.311% <= 244.223 milliseconds (cumulative count 32311000)
-32.589% <= 245.119 milliseconds (cumulative count 32589000)
-32.881% <= 246.143 milliseconds (cumulative count 32881000)
-33.172% <= 247.167 milliseconds (cumulative count 33172000)
-33.446% <= 248.191 milliseconds (cumulative count 33446000)
-33.696% <= 249.215 milliseconds (cumulative count 33696000)
-33.943% <= 250.111 milliseconds (cumulative count 33943000)
-34.210% <= 251.135 milliseconds (cumulative count 34210000)
-34.480% <= 252.159 milliseconds (cumulative count 34480000)
-34.785% <= 253.183 milliseconds (cumulative count 34785000)
-35.070% <= 254.207 milliseconds (cumulative count 35070000)
-35.297% <= 255.103 milliseconds (cumulative count 35297000)
-35.573% <= 256.127 milliseconds (cumulative count 35573000)
-35.857% <= 257.151 milliseconds (cumulative count 35857000)
-36.113% <= 258.175 milliseconds (cumulative count 36113000)
-36.404% <= 259.199 milliseconds (cumulative count 36404000)
-36.674% <= 260.223 milliseconds (cumulative count 36674000)
-36.903% <= 261.119 milliseconds (cumulative count 36903000)
-37.129% <= 262.143 milliseconds (cumulative count 37129000)
-37.377% <= 263.167 milliseconds (cumulative count 37377000)
-37.621% <= 264.191 milliseconds (cumulative count 37621000)
-37.889% <= 265.215 milliseconds (cumulative count 37889000)
-38.156% <= 266.239 milliseconds (cumulative count 38156000)
-38.416% <= 267.263 milliseconds (cumulative count 38416000)
-38.675% <= 268.287 milliseconds (cumulative count 38675000)
-38.902% <= 269.311 milliseconds (cumulative count 38902000)
-39.121% <= 270.335 milliseconds (cumulative count 39121000)
-39.258% <= 271.103 milliseconds (cumulative count 39258000)
-39.448% <= 272.127 milliseconds (cumulative count 39448000)
-39.650% <= 273.151 milliseconds (cumulative count 39650000)
-39.849% <= 274.175 milliseconds (cumulative count 39849000)
-40.024% <= 275.199 milliseconds (cumulative count 40024000)
-40.220% <= 276.223 milliseconds (cumulative count 40220000)
-40.412% <= 277.247 milliseconds (cumulative count 40412000)
-40.618% <= 278.271 milliseconds (cumulative count 40618000)
-40.836% <= 279.295 milliseconds (cumulative count 40836000)
-41.083% <= 280.319 milliseconds (cumulative count 41083000)
-41.376% <= 281.343 milliseconds (cumulative count 41376000)
-41.598% <= 282.111 milliseconds (cumulative count 41598000)
-41.926% <= 283.135 milliseconds (cumulative count 41926000)
-42.248% <= 284.159 milliseconds (cumulative count 42248000)
-42.576% <= 285.183 milliseconds (cumulative count 42576000)
-42.886% <= 286.207 milliseconds (cumulative count 42886000)
-43.196% <= 287.231 milliseconds (cumulative count 43196000)
-43.498% <= 288.255 milliseconds (cumulative count 43498000)
-43.854% <= 289.279 milliseconds (cumulative count 43854000)
-44.188% <= 290.303 milliseconds (cumulative count 44188000)
-44.560% <= 291.327 milliseconds (cumulative count 44560000)
-44.896% <= 292.351 milliseconds (cumulative count 44896000)
-45.155% <= 293.119 milliseconds (cumulative count 45155000)
-45.547% <= 294.143 milliseconds (cumulative count 45547000)
-45.878% <= 295.167 milliseconds (cumulative count 45878000)
-46.246% <= 296.191 milliseconds (cumulative count 46246000)
-46.634% <= 297.215 milliseconds (cumulative count 46634000)
-47.073% <= 298.239 milliseconds (cumulative count 47073000)
-47.486% <= 299.263 milliseconds (cumulative count 47486000)
-47.944% <= 300.287 milliseconds (cumulative count 47944000)
-48.445% <= 301.311 milliseconds (cumulative count 48445000)
-48.961% <= 302.335 milliseconds (cumulative count 48961000)
-49.343% <= 303.103 milliseconds (cumulative count 49343000)
-49.875% <= 304.127 milliseconds (cumulative count 49875000)
-50.400% <= 305.151 milliseconds (cumulative count 50400000)
-50.957% <= 306.175 milliseconds (cumulative count 50957000)
-51.512% <= 307.199 milliseconds (cumulative count 51512000)
-52.059% <= 308.223 milliseconds (cumulative count 52059000)
-52.572% <= 309.247 milliseconds (cumulative count 52572000)
-53.057% <= 310.271 milliseconds (cumulative count 53057000)
-53.590% <= 311.295 milliseconds (cumulative count 53590000)
-54.117% <= 312.319 milliseconds (cumulative count 54117000)
-54.663% <= 313.343 milliseconds (cumulative count 54663000)
-55.090% <= 314.111 milliseconds (cumulative count 55090000)
-55.688% <= 315.135 milliseconds (cumulative count 55688000)
-56.340% <= 316.159 milliseconds (cumulative count 56340000)
-56.998% <= 317.183 milliseconds (cumulative count 56998000)
-57.716% <= 318.207 milliseconds (cumulative count 57716000)
-58.362% <= 319.231 milliseconds (cumulative count 58362000)
-59.080% <= 320.255 milliseconds (cumulative count 59080000)
-59.777% <= 321.279 milliseconds (cumulative count 59777000)
-60.434% <= 322.303 milliseconds (cumulative count 60434000)
-61.013% <= 323.327 milliseconds (cumulative count 61013000)
-61.573% <= 324.351 milliseconds (cumulative count 61573000)
-62.002% <= 325.119 milliseconds (cumulative count 62002000)
-62.548% <= 326.143 milliseconds (cumulative count 62548000)
-63.081% <= 327.167 milliseconds (cumulative count 63081000)
-63.593% <= 328.191 milliseconds (cumulative count 63593000)
-64.095% <= 329.215 milliseconds (cumulative count 64095000)
-64.592% <= 330.239 milliseconds (cumulative count 64592000)
-65.144% <= 331.263 milliseconds (cumulative count 65144000)
-65.668% <= 332.287 milliseconds (cumulative count 65668000)
-66.154% <= 333.311 milliseconds (cumulative count 66154000)
-66.704% <= 334.335 milliseconds (cumulative count 66704000)
-67.144% <= 335.103 milliseconds (cumulative count 67144000)
-67.770% <= 336.127 milliseconds (cumulative count 67770000)
-68.399% <= 337.151 milliseconds (cumulative count 68399000)
-68.997% <= 338.175 milliseconds (cumulative count 68997000)
-69.558% <= 339.199 milliseconds (cumulative count 69558000)
-70.098% <= 340.223 milliseconds (cumulative count 70098000)
-70.611% <= 341.247 milliseconds (cumulative count 70611000)
-71.070% <= 342.271 milliseconds (cumulative count 71070000)
-71.461% <= 343.295 milliseconds (cumulative count 71461000)
-71.839% <= 344.319 milliseconds (cumulative count 71839000)
-72.154% <= 345.343 milliseconds (cumulative count 72154000)
-72.400% <= 346.111 milliseconds (cumulative count 72400000)
-72.748% <= 347.135 milliseconds (cumulative count 72748000)
-73.139% <= 348.159 milliseconds (cumulative count 73139000)
-73.471% <= 349.183 milliseconds (cumulative count 73471000)
-73.843% <= 350.207 milliseconds (cumulative count 73843000)
-74.199% <= 351.231 milliseconds (cumulative count 74199000)
-74.546% <= 352.255 milliseconds (cumulative count 74546000)
-74.911% <= 353.279 milliseconds (cumulative count 74911000)
-75.274% <= 354.303 milliseconds (cumulative count 75274000)
-75.610% <= 355.327 milliseconds (cumulative count 75610000)
-75.917% <= 356.351 milliseconds (cumulative count 75917000)
-76.169% <= 357.119 milliseconds (cumulative count 76169000)
-76.530% <= 358.143 milliseconds (cumulative count 76530000)
-76.868% <= 359.167 milliseconds (cumulative count 76868000)
-77.184% <= 360.191 milliseconds (cumulative count 77184000)
-77.517% <= 361.215 milliseconds (cumulative count 77517000)
-77.819% <= 362.239 milliseconds (cumulative count 77819000)
-78.092% <= 363.263 milliseconds (cumulative count 78092000)
-78.383% <= 364.287 milliseconds (cumulative count 78383000)
-78.634% <= 365.311 milliseconds (cumulative count 78634000)
-78.922% <= 366.335 milliseconds (cumulative count 78922000)
-79.128% <= 367.103 milliseconds (cumulative count 79128000)
-79.434% <= 368.127 milliseconds (cumulative count 79434000)
-79.701% <= 369.151 milliseconds (cumulative count 79701000)
-79.944% <= 370.175 milliseconds (cumulative count 79944000)
-80.208% <= 371.199 milliseconds (cumulative count 80208000)
-80.484% <= 372.223 milliseconds (cumulative count 80484000)
-80.755% <= 373.247 milliseconds (cumulative count 80755000)
-81.032% <= 374.271 milliseconds (cumulative count 81032000)
-81.321% <= 375.295 milliseconds (cumulative count 81321000)
-81.597% <= 376.319 milliseconds (cumulative count 81597000)
-81.870% <= 377.343 milliseconds (cumulative count 81870000)
-82.096% <= 378.111 milliseconds (cumulative count 82096000)
-82.392% <= 379.135 milliseconds (cumulative count 82392000)
-82.697% <= 380.159 milliseconds (cumulative count 82697000)
-83.028% <= 381.183 milliseconds (cumulative count 83028000)
-83.340% <= 382.207 milliseconds (cumulative count 83340000)
-83.635% <= 383.231 milliseconds (cumulative count 83635000)
-83.922% <= 384.255 milliseconds (cumulative count 83922000)
-84.201% <= 385.279 milliseconds (cumulative count 84201000)
-84.512% <= 386.303 milliseconds (cumulative count 84512000)
-84.823% <= 387.327 milliseconds (cumulative count 84823000)
-85.112% <= 388.351 milliseconds (cumulative count 85112000)
-85.334% <= 389.119 milliseconds (cumulative count 85334000)
-85.606% <= 390.143 milliseconds (cumulative count 85606000)
-85.907% <= 391.167 milliseconds (cumulative count 85907000)
-86.199% <= 392.191 milliseconds (cumulative count 86199000)
-86.495% <= 393.215 milliseconds (cumulative count 86495000)
-86.742% <= 394.239 milliseconds (cumulative count 86742000)
-86.949% <= 395.263 milliseconds (cumulative count 86949000)
-87.181% <= 396.287 milliseconds (cumulative count 87181000)
-87.422% <= 397.311 milliseconds (cumulative count 87422000)
-87.651% <= 398.335 milliseconds (cumulative count 87651000)
-87.818% <= 399.103 milliseconds (cumulative count 87818000)
-88.067% <= 400.127 milliseconds (cumulative count 88067000)
-88.274% <= 401.151 milliseconds (cumulative count 88274000)
-88.465% <= 402.175 milliseconds (cumulative count 88465000)
-88.643% <= 403.199 milliseconds (cumulative count 88643000)
-88.793% <= 404.223 milliseconds (cumulative count 88793000)
-88.955% <= 405.247 milliseconds (cumulative count 88955000)
-89.107% <= 406.271 milliseconds (cumulative count 89107000)
-89.271% <= 407.295 milliseconds (cumulative count 89271000)
-89.446% <= 408.319 milliseconds (cumulative count 89446000)
-89.587% <= 409.343 milliseconds (cumulative count 89587000)
-89.682% <= 410.111 milliseconds (cumulative count 89682000)
-89.812% <= 411.135 milliseconds (cumulative count 89812000)
-89.951% <= 412.159 milliseconds (cumulative count 89951000)
-90.063% <= 413.183 milliseconds (cumulative count 90063000)
-90.189% <= 414.207 milliseconds (cumulative count 90189000)
-90.314% <= 415.231 milliseconds (cumulative count 90314000)
-90.426% <= 416.255 milliseconds (cumulative count 90426000)
-90.530% <= 417.279 milliseconds (cumulative count 90530000)
-90.621% <= 418.303 milliseconds (cumulative count 90621000)
-90.728% <= 419.327 milliseconds (cumulative count 90728000)
-90.841% <= 420.351 milliseconds (cumulative count 90841000)
-90.912% <= 421.119 milliseconds (cumulative count 90912000)
-91.024% <= 422.143 milliseconds (cumulative count 91024000)
-91.119% <= 423.167 milliseconds (cumulative count 91119000)
-91.220% <= 424.191 milliseconds (cumulative count 91220000)
-91.336% <= 425.215 milliseconds (cumulative count 91336000)
-91.471% <= 426.239 milliseconds (cumulative count 91471000)
-91.601% <= 427.263 milliseconds (cumulative count 91601000)
-91.743% <= 428.287 milliseconds (cumulative count 91743000)
-91.874% <= 429.311 milliseconds (cumulative count 91874000)
-91.977% <= 430.335 milliseconds (cumulative count 91977000)
-92.071% <= 431.103 milliseconds (cumulative count 92071000)
-92.211% <= 432.127 milliseconds (cumulative count 92211000)
-92.368% <= 433.151 milliseconds (cumulative count 92368000)
-92.507% <= 434.175 milliseconds (cumulative count 92507000)
-92.640% <= 435.199 milliseconds (cumulative count 92640000)
-92.773% <= 436.223 milliseconds (cumulative count 92773000)
-92.935% <= 437.247 milliseconds (cumulative count 92935000)
-93.110% <= 438.271 milliseconds (cumulative count 93110000)
-93.235% <= 439.295 milliseconds (cumulative count 93235000)
-93.342% <= 440.319 milliseconds (cumulative count 93342000)
-93.433% <= 441.343 milliseconds (cumulative count 93433000)
-93.512% <= 442.111 milliseconds (cumulative count 93512000)
-93.619% <= 443.135 milliseconds (cumulative count 93619000)
-93.718% <= 444.159 milliseconds (cumulative count 93718000)
-93.822% <= 445.183 milliseconds (cumulative count 93822000)
-93.922% <= 446.207 milliseconds (cumulative count 93922000)
-94.020% <= 447.231 milliseconds (cumulative count 94020000)
-94.115% <= 448.255 milliseconds (cumulative count 94115000)
-94.191% <= 449.279 milliseconds (cumulative count 94191000)
-94.272% <= 450.303 milliseconds (cumulative count 94272000)
-94.361% <= 451.327 milliseconds (cumulative count 94361000)
-94.424% <= 452.351 milliseconds (cumulative count 94424000)
-94.504% <= 453.119 milliseconds (cumulative count 94504000)
-94.612% <= 454.143 milliseconds (cumulative count 94612000)
-94.706% <= 455.167 milliseconds (cumulative count 94706000)
-94.812% <= 456.191 milliseconds (cumulative count 94812000)
-94.913% <= 457.215 milliseconds (cumulative count 94913000)
-95.009% <= 458.239 milliseconds (cumulative count 95009000)
-95.090% <= 459.263 milliseconds (cumulative count 95090000)
-95.193% <= 460.287 milliseconds (cumulative count 95193000)
-95.302% <= 461.311 milliseconds (cumulative count 95302000)
-95.413% <= 462.335 milliseconds (cumulative count 95413000)
-95.488% <= 463.103 milliseconds (cumulative count 95488000)
-95.609% <= 464.127 milliseconds (cumulative count 95609000)
-95.731% <= 465.151 milliseconds (cumulative count 95731000)
-95.852% <= 466.175 milliseconds (cumulative count 95852000)
-95.946% <= 467.199 milliseconds (cumulative count 95946000)
-96.028% <= 468.223 milliseconds (cumulative count 96028000)
-96.140% <= 469.247 milliseconds (cumulative count 96140000)
-96.247% <= 470.271 milliseconds (cumulative count 96247000)
-96.358% <= 471.295 milliseconds (cumulative count 96358000)
-96.480% <= 472.319 milliseconds (cumulative count 96480000)
-96.576% <= 473.343 milliseconds (cumulative count 96576000)
-96.652% <= 474.111 milliseconds (cumulative count 96652000)
-96.734% <= 475.135 milliseconds (cumulative count 96734000)
-96.812% <= 476.159 milliseconds (cumulative count 96812000)
-96.894% <= 477.183 milliseconds (cumulative count 96894000)
-96.986% <= 478.207 milliseconds (cumulative count 96986000)
-97.066% <= 479.231 milliseconds (cumulative count 97066000)
-97.143% <= 480.255 milliseconds (cumulative count 97143000)
-97.224% <= 481.279 milliseconds (cumulative count 97224000)
-97.304% <= 482.303 milliseconds (cumulative count 97304000)
-97.362% <= 483.327 milliseconds (cumulative count 97362000)
-97.415% <= 484.351 milliseconds (cumulative count 97415000)
-97.473% <= 485.119 milliseconds (cumulative count 97473000)
-97.519% <= 486.143 milliseconds (cumulative count 97519000)
-97.574% <= 487.167 milliseconds (cumulative count 97574000)
-97.621% <= 488.191 milliseconds (cumulative count 97621000)
-97.667% <= 489.215 milliseconds (cumulative count 97667000)
-97.726% <= 490.239 milliseconds (cumulative count 97726000)
-97.785% <= 491.263 milliseconds (cumulative count 97785000)
-97.850% <= 492.287 milliseconds (cumulative count 97850000)
-97.896% <= 493.311 milliseconds (cumulative count 97896000)
-97.918% <= 494.335 milliseconds (cumulative count 97918000)
-97.937% <= 495.103 milliseconds (cumulative count 97937000)
-97.982% <= 496.127 milliseconds (cumulative count 97982000)
-98.030% <= 497.151 milliseconds (cumulative count 98030000)
-98.088% <= 498.175 milliseconds (cumulative count 98088000)
-98.145% <= 499.199 milliseconds (cumulative count 98145000)
-98.211% <= 500.223 milliseconds (cumulative count 98211000)
-98.263% <= 501.247 milliseconds (cumulative count 98263000)
-98.316% <= 502.271 milliseconds (cumulative count 98316000)
-98.373% <= 503.295 milliseconds (cumulative count 98373000)
-98.424% <= 504.319 milliseconds (cumulative count 98424000)
-98.469% <= 505.343 milliseconds (cumulative count 98469000)
-98.506% <= 506.111 milliseconds (cumulative count 98506000)
-98.553% <= 507.135 milliseconds (cumulative count 98553000)
-98.610% <= 508.159 milliseconds (cumulative count 98610000)
-98.649% <= 509.183 milliseconds (cumulative count 98649000)
-98.685% <= 510.207 milliseconds (cumulative count 98685000)
-98.725% <= 511.231 milliseconds (cumulative count 98725000)
-98.772% <= 512.255 milliseconds (cumulative count 98772000)
-98.815% <= 513.279 milliseconds (cumulative count 98815000)
-98.835% <= 514.303 milliseconds (cumulative count 98835000)
-98.865% <= 515.327 milliseconds (cumulative count 98865000)
-98.889% <= 516.351 milliseconds (cumulative count 98889000)
-98.904% <= 517.119 milliseconds (cumulative count 98904000)
-98.921% <= 518.143 milliseconds (cumulative count 98921000)
-98.947% <= 519.167 milliseconds (cumulative count 98947000)
-98.967% <= 520.191 milliseconds (cumulative count 98967000)
-98.988% <= 521.215 milliseconds (cumulative count 98988000)
-98.999% <= 522.239 milliseconds (cumulative count 98999000)
-99.013% <= 523.263 milliseconds (cumulative count 99013000)
-99.030% <= 524.287 milliseconds (cumulative count 99030000)
-99.054% <= 525.311 milliseconds (cumulative count 99054000)
-99.075% <= 526.335 milliseconds (cumulative count 99075000)
-99.098% <= 527.359 milliseconds (cumulative count 99098000)
-99.107% <= 528.383 milliseconds (cumulative count 99107000)
-99.112% <= 529.407 milliseconds (cumulative count 99112000)
-99.124% <= 530.431 milliseconds (cumulative count 99124000)
-99.142% <= 531.455 milliseconds (cumulative count 99142000)
-99.160% <= 532.479 milliseconds (cumulative count 99160000)
-99.173% <= 533.503 milliseconds (cumulative count 99173000)
-99.181% <= 534.527 milliseconds (cumulative count 99181000)
-99.189% <= 535.551 milliseconds (cumulative count 99189000)
-99.193% <= 536.575 milliseconds (cumulative count 99193000)
-99.197% <= 537.599 milliseconds (cumulative count 99197000)
-99.199% <= 538.111 milliseconds (cumulative count 99199000)
-99.213% <= 539.135 milliseconds (cumulative count 99213000)
-99.232% <= 540.159 milliseconds (cumulative count 99232000)
-99.244% <= 541.183 milliseconds (cumulative count 99244000)
-99.246% <= 542.207 milliseconds (cumulative count 99246000)
-99.251% <= 543.231 milliseconds (cumulative count 99251000)
-99.268% <= 544.255 milliseconds (cumulative count 99268000)
-99.286% <= 545.279 milliseconds (cumulative count 99286000)
-99.291% <= 546.303 milliseconds (cumulative count 99291000)
-99.311% <= 547.327 milliseconds (cumulative count 99311000)
-99.325% <= 548.351 milliseconds (cumulative count 99325000)
-99.342% <= 549.375 milliseconds (cumulative count 99342000)
-99.358% <= 550.399 milliseconds (cumulative count 99358000)
-99.367% <= 551.423 milliseconds (cumulative count 99367000)
-99.370% <= 552.447 milliseconds (cumulative count 99370000)
-99.384% <= 553.471 milliseconds (cumulative count 99384000)
-99.403% <= 554.495 milliseconds (cumulative count 99403000)
-99.432% <= 555.519 milliseconds (cumulative count 99432000)
-99.442% <= 556.543 milliseconds (cumulative count 99442000)
-99.457% <= 557.567 milliseconds (cumulative count 99457000)
-99.472% <= 558.591 milliseconds (cumulative count 99472000)
-99.479% <= 559.103 milliseconds (cumulative count 99479000)
-99.492% <= 560.127 milliseconds (cumulative count 99492000)
-99.499% <= 568.319 milliseconds (cumulative count 99499000)
-99.514% <= 569.343 milliseconds (cumulative count 99514000)
-99.522% <= 570.367 milliseconds (cumulative count 99522000)
-99.525% <= 571.391 milliseconds (cumulative count 99525000)
-99.533% <= 576.511 milliseconds (cumulative count 99533000)
-99.539% <= 577.535 milliseconds (cumulative count 99539000)
-99.555% <= 578.559 milliseconds (cumulative count 99555000)
-99.570% <= 579.583 milliseconds (cumulative count 99570000)
-99.585% <= 580.607 milliseconds (cumulative count 99585000)
-99.592% <= 581.119 milliseconds (cumulative count 99592000)
-99.606% <= 582.143 milliseconds (cumulative count 99606000)
-99.618% <= 583.167 milliseconds (cumulative count 99618000)
-99.632% <= 584.191 milliseconds (cumulative count 99632000)
-99.647% <= 585.215 milliseconds (cumulative count 99647000)
-99.652% <= 586.239 milliseconds (cumulative count 99652000)
-99.655% <= 615.423 milliseconds (cumulative count 99655000)
-99.667% <= 624.127 milliseconds (cumulative count 99667000)
-99.681% <= 625.151 milliseconds (cumulative count 99681000)
-99.688% <= 626.175 milliseconds (cumulative count 99688000)
-99.694% <= 629.247 milliseconds (cumulative count 99694000)
-99.706% <= 630.271 milliseconds (cumulative count 99706000)
-99.721% <= 631.295 milliseconds (cumulative count 99721000)
-99.735% <= 632.319 milliseconds (cumulative count 99735000)
-99.749% <= 633.343 milliseconds (cumulative count 99749000)
-99.754% <= 634.367 milliseconds (cumulative count 99754000)
-99.762% <= 644.607 milliseconds (cumulative count 99762000)
-99.769% <= 645.119 milliseconds (cumulative count 99769000)
-99.784% <= 646.143 milliseconds (cumulative count 99784000)
-99.799% <= 647.167 milliseconds (cumulative count 99799000)
-99.814% <= 648.191 milliseconds (cumulative count 99814000)
-99.828% <= 649.215 milliseconds (cumulative count 99828000)
-99.839% <= 650.239 milliseconds (cumulative count 99839000)
-99.842% <= 653.311 milliseconds (cumulative count 99842000)
-99.856% <= 654.335 milliseconds (cumulative count 99856000)
-99.857% <= 655.359 milliseconds (cumulative count 99857000)
-99.861% <= 673.279 milliseconds (cumulative count 99861000)
-99.875% <= 674.303 milliseconds (cumulative count 99875000)
-99.890% <= 675.327 milliseconds (cumulative count 99890000)
-99.904% <= 676.351 milliseconds (cumulative count 99904000)
-99.919% <= 677.375 milliseconds (cumulative count 99919000)
-99.930% <= 678.399 milliseconds (cumulative count 99930000)
-99.938% <= 685.567 milliseconds (cumulative count 99938000)
-99.952% <= 686.591 milliseconds (cumulative count 99952000)
-99.959% <= 687.103 milliseconds (cumulative count 99959000)
-99.964% <= 688.127 milliseconds (cumulative count 99964000)
-99.969% <= 696.319 milliseconds (cumulative count 99969000)
-99.983% <= 697.343 milliseconds (cumulative count 99983000)
-99.997% <= 698.367 milliseconds (cumulative count 99997000)
-100.000% <= 699.391 milliseconds (cumulative count 100000000)
-
-Summary:
-  throughput summary: 1902442.75 requests per second
-  latency summary (msec):
-          avg       min       p50       p95       p99       max
-      303.613    26.384   304.383   458.239   522.495   698.879
-

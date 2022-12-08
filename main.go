@@ -3,15 +3,16 @@ package main
 import (
 	"flag"
 	"fmt"
-	"time"
+	//"time"
 
 	nginxbenchmark "github.com/Shreyas220/Benchmarking/nginx_benchmark"
 	redisbenchmark "github.com/Shreyas220/Benchmarking/redis_benchmark"
 	"github.com/Shreyas220/Benchmarking/utils"
+
 )
 
 func main() {
-	bench := flag.String("b", "nginx", "# of iterations")
+	bench := flag.String("b", "", "# of iterations")
 	num := flag.Int("n", 10000, "# of iterations")
 	client := flag.Int("c", 100, "# of client")
 	iteration := flag.Int("i", 2, "# of client")
@@ -35,7 +36,9 @@ func main() {
 }
 
 func redis() {
-	redisbenchmark.RunRedisBenchmark()
-	time.Sleep(10 * time.Second)
-	redisbenchmark.Filetxtthing()
+	//redisbenchmark.RunRedisBenchmark()
+	//time.Sleep(10 * time.Second)
+	redisbenchmark.NewFiletxtthing()
 }
+
+

@@ -1,0 +1,45 @@
+GET: rps=0.0 (overall: -nan) avg_msec=-nan (overall: -nan)                                                           ====== GET ======
+  10000 requests completed in 0.12 seconds
+  50 parallel clients
+  3 bytes payload
+  keep alive: 1
+  host configuration "save": 900 1 300 10 60 10000
+  host configuration "appendonly": yes
+  multi-thread: no
+
+Latency by percentile distribution:
+0.000% <= 0.111 milliseconds (cumulative count 1)
+50.000% <= 0.303 milliseconds (cumulative count 7158)
+75.000% <= 0.311 milliseconds (cumulative count 8298)
+87.500% <= 0.327 milliseconds (cumulative count 8974)
+93.750% <= 0.359 milliseconds (cumulative count 9396)
+96.875% <= 0.439 milliseconds (cumulative count 9698)
+98.438% <= 0.479 milliseconds (cumulative count 9844)
+99.219% <= 1.047 milliseconds (cumulative count 9923)
+99.609% <= 1.231 milliseconds (cumulative count 9961)
+99.805% <= 1.383 milliseconds (cumulative count 9981)
+99.902% <= 1.431 milliseconds (cumulative count 9993)
+99.951% <= 1.447 milliseconds (cumulative count 9997)
+99.976% <= 1.463 milliseconds (cumulative count 10000)
+100.000% <= 1.463 milliseconds (cumulative count 10000)
+
+Cumulative distribution of latencies:
+0.000% <= 0.103 milliseconds (cumulative count 0)
+0.110% <= 0.207 milliseconds (cumulative count 11)
+71.580% <= 0.303 milliseconds (cumulative count 7158)
+96.020% <= 0.407 milliseconds (cumulative count 9602)
+98.710% <= 0.503 milliseconds (cumulative count 9871)
+98.860% <= 0.607 milliseconds (cumulative count 9886)
+99.200% <= 0.703 milliseconds (cumulative count 9920)
+99.340% <= 1.103 milliseconds (cumulative count 9934)
+99.590% <= 1.207 milliseconds (cumulative count 9959)
+99.690% <= 1.303 milliseconds (cumulative count 9969)
+99.860% <= 1.407 milliseconds (cumulative count 9986)
+100.000% <= 1.503 milliseconds (cumulative count 10000)
+
+Summary:
+  throughput summary: 83333.34 requests per second
+  latency summary (msec):
+          avg       min       p50       p95       p99       max
+        0.312     0.104     0.303     0.383     0.623     1.463
+
