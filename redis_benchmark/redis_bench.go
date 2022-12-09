@@ -5,7 +5,6 @@ import (
 	"log"
 	"strconv"
 	"os"
-	"os/exec"
 	"strings"
 	"time"
 	"github.com/Shreyas220/Benchmarking/utils"
@@ -14,13 +13,29 @@ import (
 func RunRedisBenchmark() {
 
 	fmt.Println("Starting")
- 	n := 1000
+ 	n := 100000
 	for i := 0; i < 1; i++ {
 		n = n * 10
-		fmt.Println("======WithoutKubearmor ", n, "======")
-		runCommandWithoutKubearmor(n)
+		fmt.Println("======WithKubearmor ", n, "======")
+		runCommandWithKubearmor(n)
 	}
- 
+	n2 := 100000
+
+	utils.ApplyPolicy("redis.yaml")
+	time.Sleep(1 * time.Second)
+	for i := 0; i < 1; i++ {
+		n2 = n2 * 10
+		fmt.Println("======WithPolicy ", n, "======")
+		runCommandWithPolicy(n2)
+	}
+	time.Sleep(1 * time.Second)
+	command := "kubectl delete -f redis.yaml"
+	
+	_, err := utils.RunCommand(command)
+	if err != nil {
+		log.Fatal(err)
+	}
+
 /* 	utils.InstallKubearmor()
 
 	n2 := 100000
@@ -44,8 +59,8 @@ func RunRedisBenchmark() {
 }
 
 
-func runCommandWithoutKubearmor(n int) {
-	name := "./redis_benchmark/runtime/timewithoutKubearmor0" + "_" + fmt.Sprint(n) + ".txt"
+func runCommandWithKubearmor(n int) {
+	name := "./redis_benchmark/runtime/timewithKubearmor0" + "_" + fmt.Sprint(n) + ".txt"
 	num := getruntimens()
 	saveNewRuntime(name,num)
 	for i := 1; i < 11; i++ {
@@ -57,8 +72,8 @@ func runCommandWithoutKubearmor(n int) {
 		}
 
 		output := string(out)
-		str := "./redis_benchmark/test/withoutKubearmor" + fmt.Sprint(i) + "_" + fmt.Sprint(n) + ".txt"
-		name := "./redis_benchmark/runtime/timewithoutKubearmor" + fmt.Sprint(i) + "_" + fmt.Sprint(n) + ".txt"
+		str := "./redis_benchmark/test/withKubearmory" + fmt.Sprint(i) + "_" + fmt.Sprint(n) + ".txt"
+		name := "./redis_benchmark/runtime/timewithKubearmory" + fmt.Sprint(i) + "_" + fmt.Sprint(n) + ".txt"
 		num := getruntimens()
 		saveNewRuntime(name,num)
 		f, err := os.Create(str)
@@ -80,15 +95,20 @@ func runCommandWithoutKubearmor(n int) {
 
 }
 
-func runCommandWithKubearmor(n int) {
+func runCommandWithoutKubearmor(n int) {
 	for i := 1; i < 11; i++ {
-
-		out, err := exec.Command("kubectl", "exec", "-it", "redis-client", "--", "redis-benchmark", "-t", "GET", "-P", "1000", "-c", "1000", "-n", fmt.Sprint(n)).Output()
+		command := "kubectl -n redis exec -it redis-0 -- redis-benchmark -a Hello@123 -t GET -n " + fmt.Sprintln(n)
+		//out, err := exec.Command("kubectl", "exec", "-it", "redis-client", "--", "redis-benchmark", "-t", "GET", "-P", "1000", "-c", "1000", "-n", fmt.Sprint(n)).Output()
+		out, err := utils.RunCommand(command)
 		if err != nil {
 			log.Fatal(err)
 		}
 		output := string(out)
-		str := "./redis_benchmark/test/withKubearmor" + fmt.Sprint(i) + "_" + fmt.Sprint(n) + ".txt"
+		str := "./redis_benchmark/test/withPolicy" + fmt.Sprint(i) + "_" + fmt.Sprint(n) + ".txt"
+		name := "./redis_benchmark/runtime/timewithPolicy" + fmt.Sprint(i) + "_" + fmt.Sprint(n) + ".txt"
+		num := getruntimens()
+		saveNewRuntime(name,num)
+
 		f, err := os.Create(str)
 		if err != nil {
 			log.Fatal(err)
@@ -110,9 +130,13 @@ func runCommandWithKubearmor(n int) {
 }
 
 func runCommandWithPolicy(n int) {
+	name := "./redis_benchmark/runtime/timewithPolicy0" + "_" + fmt.Sprint(n) + ".txt"
+	num := getruntimens()
+	saveNewRuntime(name,num)
 	for i := 1; i < 11; i++ {
-
-		out, err := exec.Command("kubectl", "exec", "-it", "redis-client", "--", "redis-benchmark", "-t", "GET", "-P", "1000", "-c", "1000", "-n", fmt.Sprint(n)).Output()
+		command := "kubectl -n redis exec -it redis-0 -- redis-benchmark -a Hello@123 -t GET -n " + fmt.Sprintln(n)
+		//out, err := exec.Command("kubectl","-n","redis" ,"exec", "-it", "redis-client", "--", "redis-benchmark", "-t", "GET", "-P", "1000", "-c", "1000", "-n", fmt.Sprint(n)).Output()
+		out, err := utils.RunCommand(command)
 		if err != nil {
 			log.Fatal(err)
 		}
@@ -159,7 +183,7 @@ func saveNewRuntime(name string,num int64){
 func getruntimens() int64 {
 
 	var sum int64 = 0
-	for i:= 546;i<591;i++{
+	for i:= 641;i<685;i++{
 		str := "sudo bpftool prog show id " + fmt.Sprint(i)
 		out, err := utils.RunCommand(str)
 		if err != nil {

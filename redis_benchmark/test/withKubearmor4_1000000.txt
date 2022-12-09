@@ -1,0 +1,56 @@
+GET: rps=0.0 (overall: -nan) avg_msec=-nan (overall: -nan)GET: rps=79964.1 (overall: 79964.1) avg_msec=0.322 (overall: 0.322)GET: rps=85490.0 (overall: 82727.1) avg_msec=0.299 (overall: 0.310)GET: rps=82557.8 (overall: 82670.6) avg_msec=0.311 (overall: 0.311)GET: rps=85248.0 (overall: 83313.1) avg_msec=0.301 (overall: 0.308)GET: rps=84780.9 (overall: 83606.9) avg_msec=0.301 (overall: 0.307)GET: rps=84362.6 (overall: 83732.9) avg_msec=0.303 (overall: 0.306)GET: rps=84820.0 (overall: 83887.8) avg_msec=0.303 (overall: 0.306)GET: rps=84964.1 (overall: 84022.4) avg_msec=0.301 (overall: 0.305)GET: rps=85004.0 (overall: 84131.6) avg_msec=0.302 (overall: 0.305)GET: rps=84628.0 (overall: 84181.1) avg_msec=0.303 (overall: 0.305)GET: rps=83557.8 (overall: 84124.4) avg_msec=0.306 (overall: 0.305)GET: rps=82394.4 (overall: 83980.1) avg_msec=0.311 (overall: 0.305)GET: rps=83649.4 (overall: 83954.6) avg_msec=0.306 (overall: 0.305)GET: rps=84424.0 (overall: 83988.0) avg_msec=0.304 (overall: 0.305)GET: rps=85063.8 (overall: 84059.8) avg_msec=0.301 (overall: 0.305)GET: rps=85326.7 (overall: 84139.1) avg_msec=0.300 (overall: 0.305)GET: rps=84764.0 (overall: 84175.7) avg_msec=0.303 (overall: 0.305)GET: rps=85318.7 (overall: 84239.3) avg_msec=0.299 (overall: 0.304)GET: rps=84577.7 (overall: 84257.1) avg_msec=0.302 (overall: 0.304)GET: rps=85236.0 (overall: 84305.9) avg_msec=0.302 (overall: 0.304)GET: rps=84549.8 (overall: 84317.6) avg_msec=0.303 (overall: 0.304)GET: rps=82406.4 (overall: 84230.6) avg_msec=0.313 (overall: 0.304)GET: rps=74203.2 (overall: 83794.2) avg_msec=0.350 (overall: 0.306)GET: rps=74685.3 (overall: 83414.3) avg_msec=0.350 (overall: 0.308)GET: rps=80665.3 (overall: 83304.2) avg_msec=0.318 (overall: 0.308)GET: rps=85208.0 (overall: 83377.2) avg_msec=0.302 (overall: 0.308)GET: rps=85506.0 (overall: 83456.1) avg_msec=0.300 (overall: 0.308)GET: rps=84410.4 (overall: 83490.2) avg_msec=0.303 (overall: 0.308)GET: rps=84820.0 (overall: 83536.0) avg_msec=0.303 (overall: 0.307)GET: rps=82741.0 (overall: 83509.4) avg_msec=0.309 (overall: 0.307)GET: rps=85039.8 (overall: 83558.9) avg_msec=0.301 (overall: 0.307)GET: rps=84520.0 (overall: 83588.8) avg_msec=0.303 (overall: 0.307)GET: rps=83896.4 (overall: 83598.1) avg_msec=0.305 (overall: 0.307)GET: rps=82597.6 (overall: 83568.7) avg_msec=0.311 (overall: 0.307)GET: rps=85108.0 (overall: 83612.5) avg_msec=0.302 (overall: 0.307)GET: rps=83366.5 (overall: 83605.7) avg_msec=0.307 (overall: 0.307)GET: rps=85536.0 (overall: 83657.7) avg_msec=0.300 (overall: 0.307)GET: rps=85478.1 (overall: 83705.7) avg_msec=0.300 (overall: 0.307)GET: rps=84298.8 (overall: 83720.9) avg_msec=0.303 (overall: 0.307)GET: rps=85184.0 (overall: 83757.4) avg_msec=0.302 (overall: 0.306)GET: rps=84912.4 (overall: 83785.6) avg_msec=0.301 (overall: 0.306)GET: rps=85504.0 (overall: 83826.4) avg_msec=0.300 (overall: 0.306)GET: rps=83255.0 (overall: 83813.1) avg_msec=0.308 (overall: 0.306)GET: rps=84868.5 (overall: 83837.1) avg_msec=0.302 (overall: 0.306)GET: rps=84984.0 (overall: 83862.5) avg_msec=0.302 (overall: 0.306)GET: rps=85255.0 (overall: 83892.8) avg_msec=0.300 (overall: 0.306)GET: rps=84015.9 (overall: 83895.4) avg_msec=0.305 (overall: 0.306)                                                                    ====== GET ======
+  1000000 requests completed in 11.92 seconds
+  50 parallel clients
+  3 bytes payload
+  keep alive: 1
+  host configuration "save": 900 1 300 10 60 10000
+  host configuration "appendonly": yes
+  multi-thread: no
+
+Latency by percentile distribution:
+0.000% <= 0.119 milliseconds (cumulative count 2)
+50.000% <= 0.295 milliseconds (cumulative count 514110)
+75.000% <= 0.303 milliseconds (cumulative count 757455)
+87.500% <= 0.319 milliseconds (cumulative count 900824)
+93.750% <= 0.351 milliseconds (cumulative count 940251)
+96.875% <= 0.415 milliseconds (cumulative count 969430)
+98.438% <= 0.463 milliseconds (cumulative count 985561)
+99.219% <= 0.575 milliseconds (cumulative count 992275)
+99.609% <= 0.679 milliseconds (cumulative count 996139)
+99.805% <= 0.799 milliseconds (cumulative count 998087)
+99.902% <= 0.919 milliseconds (cumulative count 999061)
+99.951% <= 1.031 milliseconds (cumulative count 999512)
+99.976% <= 1.103 milliseconds (cumulative count 999759)
+99.988% <= 1.223 milliseconds (cumulative count 999888)
+99.994% <= 1.439 milliseconds (cumulative count 999940)
+99.997% <= 1.511 milliseconds (cumulative count 999970)
+99.998% <= 1.759 milliseconds (cumulative count 999993)
+100.000% <= 1.767 milliseconds (cumulative count 999999)
+100.000% <= 1.783 milliseconds (cumulative count 1000000)
+100.000% <= 1.783 milliseconds (cumulative count 1000000)
+
+Cumulative distribution of latencies:
+0.000% <= 0.103 milliseconds (cumulative count 0)
+0.004% <= 0.207 milliseconds (cumulative count 41)
+75.745% <= 0.303 milliseconds (cumulative count 757455)
+96.506% <= 0.407 milliseconds (cumulative count 965063)
+98.908% <= 0.503 milliseconds (cumulative count 989077)
+99.407% <= 0.607 milliseconds (cumulative count 994069)
+99.649% <= 0.703 milliseconds (cumulative count 996493)
+99.820% <= 0.807 milliseconds (cumulative count 998201)
+99.898% <= 0.903 milliseconds (cumulative count 998980)
+99.946% <= 1.007 milliseconds (cumulative count 999461)
+99.976% <= 1.103 milliseconds (cumulative count 999759)
+99.986% <= 1.207 milliseconds (cumulative count 999855)
+99.993% <= 1.303 milliseconds (cumulative count 999930)
+99.993% <= 1.407 milliseconds (cumulative count 999932)
+99.996% <= 1.503 milliseconds (cumulative count 999959)
+99.997% <= 1.607 milliseconds (cumulative count 999973)
+100.000% <= 1.807 milliseconds (cumulative count 1000000)
+
+Summary:
+  throughput summary: 83906.70 requests per second
+  latency summary (msec):
+          avg       min       p50       p95       p99       max
+        0.306     0.112     0.295     0.375     0.527     1.783
+

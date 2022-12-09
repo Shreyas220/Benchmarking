@@ -3,8 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	//"time"
-
+	"time"
 	nginxbenchmark "github.com/Shreyas220/Benchmarking/nginx_benchmark"
 	redisbenchmark "github.com/Shreyas220/Benchmarking/redis_benchmark"
 	"github.com/Shreyas220/Benchmarking/utils"
@@ -36,9 +35,15 @@ func main() {
 }
 
 func redis() {
-	//redisbenchmark.RunRedisBenchmark()
-	//time.Sleep(10 * time.Second)
+
+	for i:=0; i <5 ; i ++{
+	redisbenchmark.RunRedisBenchmark()
+	time.Sleep(10 * time.Second)
+	redisbenchmark.Filetxtthing()
 	redisbenchmark.NewFiletxtthing()
+	redisbenchmark.NewFiletxtthing2()
+	}
+
 }
 
 

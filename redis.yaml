@@ -1,0 +1,43 @@
+{
+    "apiVersion": "security.kubearmor.com/v1",
+    "kind": "KubeArmorPolicy",
+    "metadata": {
+        "name": "autopol-system-463934304",
+        "namespace": "accuknox-agents"
+    },
+    "spec": {
+        "severity": 1,
+        "selector": {
+            "matchLabels": {
+                "app": "discovery-engine"
+            }
+        },
+        "process": {
+            "matchPaths": [
+                {
+                    "path": "/knoxAutoPolicy"
+                }
+            ]
+        },
+        "file": {
+            "matchPaths": [
+                {
+                    "path": "/accuknox-obs.db"
+                },
+                {
+                    "path": "/accuknox.db"
+                },
+                {
+                    "path": "/run/secrets/kubernetes.io/serviceaccount/..2022_12_08_18_54_16.3480765084/token"
+                }
+            ],
+            "matchDirectories": [
+                {
+                    "dir": "/lib/x86_64-linux-gnu/",
+                    "recursive": true
+                }
+            ]
+        },
+        "action": "Allow"
+    }
+}
